@@ -1,0 +1,9 @@
+11-Jul-2026 03:46:39 | INFO    | KLayout version detected: 0.30.9
+11-Jul-2026 03:46:39 | INFO    | Using DRC JSON file: /foss/pdks/ihp-sg13cmos5l/libs.tech/klayout/python/sg13cmos5l_pycell_lib/sg13cmos5l_tech_mod.json
+11-Jul-2026 03:49:42 | ERROR   | sg13cmos5l_maximal generated an exception: Command 'klayout -b -r '/foss/pdks/ihp-sg13cmos5l/libs.tech/klayout/tech/drc/rule_decks/sg13cmos5l_maximal.drc' -rd threads='16' -rd drc_json_default='/foss/pdks/ihp-sg13cmos5l/libs.tech/klayout/tech/drc/rule_decks/sg13cmos5l_tech_default.json' -rd drc_json='/foss/pdks/ihp-sg13cmos5l/libs.tech/klayout/python/sg13cmos5l_pycell_lib/sg13cmos5l_tech_mod.json' -rd run_mode='deep' -rd precheck_drc='false' -rd disable_extra_rules='false' -rd no_feol='true' -rd no_beol='true' -rd no_offgrid='false' -rd no_angle='false' -rd density_sanity='false' -rd density='false' -rd no_forbidden='true' -rd no_pin='true' -rd no_recommended='false' -rd topcell='MSPHY9932' -rd input='/foss/designs/adc8b/IHP__MSPHY9932/release/v.1.0.0/gds/MSPHY9932.gds' -rd report='/foss/designs/adc8b/IHP__MSPHY9932/release/v.1.0.0/drc/MSPHY9932_MSPHY9932_sg13cmos5l_maximal.lyrdb' -rd log='/foss/designs/adc8b/IHP__MSPHY9932/release/v.1.0.0/drc/MSPHY9932_MSPHY9932_sg13cmos5l_maximal.log' -rd tables="sg13cmos5l_maximal"' returned non-zero exit status 11.
+11-Jul-2026 03:49:42 | ERROR   | ==================================================================================
+11-Jul-2026 03:49:42 | ERROR   | KLayout DRC Check Failed: Violations were detected in the layout.
+11-Jul-2026 03:49:42 | ERROR   | ==================================================================================
+11-Jul-2026 03:49:42 | ERROR   | Violated rules are : {'Pad.fR_M2', 'Pad.fR_M3', 'Pad.fR_M4', 'Pad.fR_TM1'}
+
+11-Jul-2026 03:49:42 | INFO    | Total DRC Run time: 182.89 seconds (including execution, analysis, and reporting)
