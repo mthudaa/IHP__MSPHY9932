@@ -1,0 +1,123 @@
+** sch_path: /foss/designs/adc8b/sch/side_cap8b.sch
+.subckt side_cap8b vdd vss in_h_sw[0] in_h_sw[1] in_h_sw[2] in_h_sw[3] in_h_sw[4] in_h_sw[5] in_h_sw[6] in_h_sw[7] in_h_sw[8]
++ in_h_sw[9] in_h_sw[10] in_l_sw[0] in_l_sw[1] in_l_sw[2] in_l_sw[3] in_l_sw[4] in_l_sw[5] in_l_sw[6] in_l_sw[7] in_l_sw[8] in_l_sw[9]
++ in_l_sw[10] vc
+*.PININFO vdd:I vss:I in_h_sw[0:10]:I in_l_sw[0:10]:I vc:B
+x1 h_sw[0] h_sw[1] h_sw[2] h_sw[3] h_sw[4] h_sw[5] h_sw[6] h_sw[7] h_sw[8] h_sw[9] h_sw[10] l_sw[0] l_sw[1] l_sw[2] l_sw[3]
++ l_sw[4] l_sw[5] l_sw[6] l_sw[7] l_sw[8] l_sw[9] l_sw[10] vc vdd vss cap8b
+x3 vdd vss in_l_sw[10] l_sw[10] buf_1
+x7[1] vdd vss in_l_sw[8] l_sw[8] buf_2
+x7[2] vdd vss in_l_sw[9] l_sw[9] buf_2
+x2[1] vdd vss in_l_sw[6] l_sw[6] buf_4
+x2[2] vdd vss in_l_sw[7] l_sw[7] buf_4
+x6[1] vdd vss in_l_sw[3] l_sw[3] buf_8
+x6[2] vdd vss in_l_sw[4] l_sw[4] buf_8
+x6[3] vdd vss in_l_sw[5] l_sw[5] buf_8
+x6 vdd vss in_h_sw[10] h_sw[10] buf_1
+x8[1] vdd vss in_h_sw[8] h_sw[8] buf_2
+x8[2] vdd vss in_h_sw[9] h_sw[9] buf_2
+x3[1] vdd vss in_h_sw[6] h_sw[6] buf_4
+x3[2] vdd vss in_h_sw[7] h_sw[7] buf_4
+x5[1] vdd vss in_h_sw[3] h_sw[3] buf_8
+x5[2] vdd vss in_h_sw[4] h_sw[4] buf_8
+x5[3] vdd vss in_h_sw[5] h_sw[5] buf_8
+x1[1] vdd vss in_l_sw[1] l_sw[1] buf_16
+x1[2] vdd vss in_l_sw[2] l_sw[2] buf_16
+x4[1] vdd vss in_h_sw[1] h_sw[1] buf_16
+x4[2] vdd vss in_h_sw[2] h_sw[2] buf_16
+x4 vdd vss in_l_sw[0] l_sw[0] buf_32
+x5 vdd vss in_h_sw[0] h_sw[0] buf_32
+.ends
+
+* expanding   symbol:  cap8b.sym # of pins=5
+** sym_path: /foss/designs/adc8b/sch/cap8b.sym
+** sch_path: /foss/designs/adc8b/sch/cap8b.sch
+.subckt cap8b h_sw[0] h_sw[1] h_sw[2] h_sw[3] h_sw[4] h_sw[5] h_sw[6] h_sw[7] h_sw[8] h_sw[9] h_sw[10] l_sw[0] l_sw[1] l_sw[2]
++ l_sw[3] l_sw[4] l_sw[5] l_sw[6] l_sw[7] l_sw[8] l_sw[9] l_sw[10] vc vdd vss
+*.PININFO l_sw[0:10]:I vss:I vc:B h_sw[0:10]:I vdd:I
+C3 vc l_sw[4] 'c' m=64
+C4 vc h_sw[4] 'c' m=64
+C5 vc l_sw[5] 'c' m=32
+C6 vc h_sw[5] 'c' m=32
+C7 vc l_sw[6] 'c' m=16
+C8 vc h_sw[6] 'c' m=16
+C9 vc l_sw[7] 'c' m=8
+C10 vc h_sw[7] 'c' m=8
+C11 vc l_sw[8] 'c' m=4
+C12 vc h_sw[8] 'c' m=4
+C13 vc l_sw[9] 'c' m=2
+C14 vc h_sw[9] 'c' m=2
+C15 vc l_sw[10] 'c'
+C16 vc h_sw[10] 'c'
+C17 vc vdd 'c'
+C26 vc vss 'c'
+C1 vc l_sw[0] 'c' m=1024
+C2 vc h_sw[0] 'c' m=1024
+C18 vc l_sw[1] 'c' m=512
+C19 vc h_sw[1] 'c' m=512
+C20 vc l_sw[2] 'c' m=256
+C21 vc h_sw[2] 'c' m=256
+C22 vc l_sw[3] 'c' m=128
+C23 vc h_sw[3] 'c' m=128
+.ends
+
+
+* expanding   symbol:  buf_1.sym # of pins=4
+** sym_path: /foss/designs/adc8b/sch/buf_1.sym
+** sch_path: /foss/designs/adc8b/sch/buf_1.sch
+.subckt buf_1 vdd vss x z
+*.PININFO vdd:I vss:I x:I z:O
+MM2 z x vdd vdd sg13_lv_pmos w=1u l=0.13u ng=1
+MM4 z x vss vss sg13_lv_nmos w=500n l=0.13u ng=1
+.ends
+
+
+* expanding   symbol:  buf_2.sym # of pins=4
+** sym_path: /foss/designs/adc8b/sch/buf_2.sym
+** sch_path: /foss/designs/adc8b/sch/buf_2.sch
+.subckt buf_2 vdd vss x z
+*.PININFO vdd:I vss:I x:I z:O
+MM2 z x vdd vdd sg13_lv_pmos w=1u l=0.13u ng=1 m=2
+MM4 z x vss vss sg13_lv_nmos w=500n l=0.13u ng=1 m=2
+.ends
+
+
+* expanding   symbol:  buf_4.sym # of pins=4
+** sym_path: /foss/designs/adc8b/sch/buf_4.sym
+** sch_path: /foss/designs/adc8b/sch/buf_4.sch
+.subckt buf_4 vdd vss x z
+*.PININFO vdd:I vss:I x:I z:O
+MM2 z x vdd vdd rfpmos w=1u l=0.13u ng=1 m=4
+MM4 z x vss vss rfnmos w=500n l=0.13u ng=1 m=4
+.ends
+
+
+* expanding   symbol:  buf_8.sym # of pins=4
+** sym_path: /foss/designs/adc8b/sch/buf_8.sym
+** sch_path: /foss/designs/adc8b/sch/buf_8.sch
+.subckt buf_8 vdd vss x z
+*.PININFO vdd:I vss:I x:I z:O
+MM2 z x vdd vdd sg13_lv_pmos w=1u l=0.13u ng=1 m=8
+MM4 z x vss vss sg13_lv_nmos w=500n l=0.13u ng=1 m=8
+.ends
+
+
+* expanding   symbol:  buf_16.sym # of pins=4
+** sym_path: /foss/designs/adc8b/sch/buf_16.sym
+** sch_path: /foss/designs/adc8b/sch/buf_16.sch
+.subckt buf_16 vdd vss x z
+*.PININFO vdd:I vss:I x:I z:O
+MM2 z x vdd vdd sg13_lv_pmos w=1u l=0.13u ng=1 m=16
+MM4 z x vss vss sg13_lv_nmos w=500n l=0.13u ng=1 m=16
+.ends
+
+
+* expanding   symbol:  buf_32.sym # of pins=4
+** sym_path: /foss/designs/adc8b/sch/buf_32.sym
+** sch_path: /foss/designs/adc8b/sch/buf_32.sch
+.subckt buf_32 vdd vss x z
+*.PININFO vdd:I vss:I x:I z:O
+MM2 z x vdd vdd sg13_lv_pmos w=1u l=0.13u ng=1 m=32
+MM4 z x vss vss sg13_lv_nmos w=500n l=0.13u ng=1 m=32
+.ends
+
