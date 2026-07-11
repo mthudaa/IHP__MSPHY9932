@@ -1,0 +1,419 @@
+Netgen 1.5.321 compiled on Mon Jun 22 11:31:27 AM CEST 2026
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Reading netlist file release/v.1.0.0/lvs/MSPHY9932_layout.spice for release/v.1.0.0/lvs/MSPHY9932_layout.spice MSPHY9932_flat
+Call to undefined subcircuit dantenna
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13_lv_nmos
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13_lv_pmos
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13_hv_nmos
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13_hv_pmos
+Creating placeholder cell definition.
+Call to undefined subcircuit rppd
+Creating placeholder cell definition.
+Call to undefined subcircuit dpantenna
+Creating placeholder cell definition.
+Reading netlist file MSPHY9932-main/model/spice/MSPHY9932.spice for MSPHY9932-main/model/spice/MSPHY9932.spice MSPHY9932
+Call to undefined subcircuit adc8b
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13_lv_nmos
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13_lv_pmos
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13_hv_nmos
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13_hv_pmos
+Creating placeholder cell definition.
+Call to undefined subcircuit rppd
+Creating placeholder cell definition.
+Call to undefined subcircuit dantenna
+Creating placeholder cell definition.
+Call to undefined subcircuit dpantenna
+Creating placeholder cell definition.
+Call to undefined subcircuit side_cap8b
+Creating placeholder cell definition.
+Call to undefined subcircuit sar12b
+Creating placeholder cell definition.
+Call to undefined subcircuit diff_bsw
+Creating placeholder cell definition.
+Call to undefined subcircuit cmp
+Creating placeholder cell definition.
+Duplicate cell sg13cmos5l_io_tie in file
+Renaming original cell to sg13cmos5l_io_tie[[0]]
+Duplicate cell sg13cmos5l_io_inv_x1 in file
+Renaming original cell to sg13cmos5l_io_inv_x1[[0]]
+Duplicate cell sg13cmos5l_io_nor2_x1 in file
+Renaming original cell to sg13cmos5l_io_nor2_x1[[0]]
+Duplicate cell sg13cmos5l_LevelUp in file
+Renaming original cell to sg13cmos5l_LevelUp[[0]]
+Duplicate cell sg13cmos5l_io_nand2_x1 in file
+Renaming original cell to sg13cmos5l_io_nand2_x1[[0]]
+Duplicate cell sg13cmos5l_GateDecode in file
+Renaming original cell to sg13cmos5l_GateDecode[[0]]
+Duplicate cell sg13cmos5l_GuardRing_P576W948HFF in file
+Renaming original cell to sg13cmos5l_GuardRing_P576W948HFF[[0]]
+Duplicate cell sg13cmos5l_GuardRing_P456W948HFF in file
+Renaming original cell to sg13cmos5l_GuardRing_P456W948HFF[[0]]
+Duplicate cell sg13cmos5l_GuardRing_N1324W456HTF in file
+Renaming original cell to sg13cmos5l_GuardRing_N1324W456HTF[[0]]
+Duplicate cell sg13cmos5l_SecondaryProtection in file
+Renaming original cell to sg13cmos5l_SecondaryProtection[[0]]
+Duplicate cell sg13cmos5l_LevelDown in file
+Renaming original cell to sg13cmos5l_LevelDown[[0]]
+Duplicate cell sg13cmos5l_Corner in file
+Renaming original cell to sg13cmos5l_Corner[[0]]
+Duplicate cell sg13cmos5l_Filler200 in file
+Renaming original cell to sg13cmos5l_Filler200[[0]]
+Duplicate cell sg13cmos5l_Filler400 in file
+Renaming original cell to sg13cmos5l_Filler400[[0]]
+Duplicate cell sg13cmos5l_Filler1000 in file
+Renaming original cell to sg13cmos5l_Filler1000[[0]]
+Duplicate cell sg13cmos5l_Filler2000 in file
+Renaming original cell to sg13cmos5l_Filler2000[[0]]
+Duplicate cell sg13cmos5l_Filler4000 in file
+Renaming original cell to sg13cmos5l_Filler4000[[0]]
+Duplicate cell sg13cmos5l_Filler10000 in file
+Renaming original cell to sg13cmos5l_Filler10000[[0]]
+Duplicate cell sg13cmos5l_GuardRing_N7276W2716HFF in file
+Renaming original cell to sg13cmos5l_GuardRing_N7276W2716HFF[[0]]
+Duplicate cell sg13cmos5l_DCNDiode in file
+Renaming original cell to sg13cmos5l_DCNDiode[[0]]
+Duplicate cell sg13cmos5l_GuardRing_P7276W2716HFF in file
+Renaming original cell to sg13cmos5l_GuardRing_P7276W2716HFF[[0]]
+Duplicate cell sg13cmos5l_DCPDiode in file
+Renaming original cell to sg13cmos5l_DCPDiode[[0]]
+Duplicate cell sg13cmos5l_IOPadVss in file
+Renaming original cell to sg13cmos5l_IOPadVss[[0]]
+Duplicate cell sg13cmos5l_GuardRing_N16000W4884HFF in file
+Renaming original cell to sg13cmos5l_GuardRing_N16000W4884HFF[[0]]
+Duplicate cell sg13cmos5l_GuardRing_P15280W4164HFF in file
+Renaming original cell to sg13cmos5l_GuardRing_P15280W4164HFF[[0]]
+Duplicate cell sg13cmos5l_Clamp_N43N43D4R in file
+Renaming original cell to sg13cmos5l_Clamp_N43N43D4R[[0]]
+Duplicate cell sg13cmos5l_RCClampResistor in file
+Renaming original cell to sg13cmos5l_RCClampResistor[[0]]
+Duplicate cell sg13cmos5l_GuardRing_P16000W4466HFT in file
+Renaming original cell to sg13cmos5l_GuardRing_P16000W4466HFT[[0]]
+Duplicate cell sg13cmos5l_GuardRing_N9472W2216HTT in file
+Renaming original cell to sg13cmos5l_GuardRing_N9472W2216HTT[[0]]
+Duplicate cell sg13cmos5l_RCClampInverter in file
+Renaming original cell to sg13cmos5l_RCClampInverter[[0]]
+Duplicate cell sg13cmos5l_GuardRing_N16000W6624HFF in file
+Renaming original cell to sg13cmos5l_GuardRing_N16000W6624HFF[[0]]
+Duplicate cell sg13cmos5l_IOPadVdd in file
+Renaming original cell to sg13cmos5l_IOPadVdd[[0]]
+Duplicate cell sg13cmos5l_IOPadIn in file
+Renaming original cell to sg13cmos5l_IOPadIn[[0]]
+Duplicate cell sg13cmos5l_GuardRing_N16000W1980HFF in file
+Renaming original cell to sg13cmos5l_GuardRing_N16000W1980HFF[[0]]
+Duplicate cell sg13cmos5l_GuardRing_P15280W1260HFF in file
+Renaming original cell to sg13cmos5l_GuardRing_P15280W1260HFF[[0]]
+Duplicate cell sg13cmos5l_Clamp_N2N2D in file
+Renaming original cell to sg13cmos5l_Clamp_N2N2D[[0]]
+Duplicate cell sg13cmos5l_GuardRing_P16000W3852HFF in file
+Renaming original cell to sg13cmos5l_GuardRing_P16000W3852HFF[[0]]
+Duplicate cell sg13cmos5l_GuardRing_N15280W3132HTF in file
+Renaming original cell to sg13cmos5l_GuardRing_N15280W3132HTF[[0]]
+Duplicate cell sg13cmos5l_Clamp_P2N2D in file
+Renaming original cell to sg13cmos5l_Clamp_P2N2D[[0]]
+Duplicate cell sg13cmos5l_LevelUpInv in file
+Renaming original cell to sg13cmos5l_LevelUpInv[[0]]
+Duplicate cell sg13cmos5l_GateLevelUpInv in file
+Renaming original cell to sg13cmos5l_GateLevelUpInv[[0]]
+Duplicate cell sg13cmos5l_IOPadOut4mA in file
+Renaming original cell to sg13cmos5l_IOPadOut4mA[[0]]
+Duplicate cell sg13cmos5l_Clamp_N8N8D in file
+Renaming original cell to sg13cmos5l_Clamp_N8N8D[[0]]
+Duplicate cell sg13cmos5l_Clamp_P8N8D in file
+Renaming original cell to sg13cmos5l_Clamp_P8N8D[[0]]
+Duplicate cell sg13cmos5l_IOPadOut16mA in file
+Renaming original cell to sg13cmos5l_IOPadOut16mA[[0]]
+Duplicate cell sg13cmos5l_Clamp_N15N15D in file
+Renaming original cell to sg13cmos5l_Clamp_N15N15D[[0]]
+Duplicate cell sg13cmos5l_Clamp_P15N15D in file
+Renaming original cell to sg13cmos5l_Clamp_P15N15D[[0]]
+Duplicate cell sg13cmos5l_IOPadOut30mA in file
+Renaming original cell to sg13cmos5l_IOPadOut30mA[[0]]
+Duplicate cell sg13cmos5l_IOPadTriOut4mA in file
+Renaming original cell to sg13cmos5l_IOPadTriOut4mA[[0]]
+Duplicate cell sg13cmos5l_IOPadTriOut16mA in file
+Renaming original cell to sg13cmos5l_IOPadTriOut16mA[[0]]
+Duplicate cell sg13cmos5l_IOPadTriOut30mA in file
+Renaming original cell to sg13cmos5l_IOPadTriOut30mA[[0]]
+Duplicate cell sg13cmos5l_IOPadInOut4mA in file
+Renaming original cell to sg13cmos5l_IOPadInOut4mA[[0]]
+Duplicate cell sg13cmos5l_IOPadInOut16mA in file
+Renaming original cell to sg13cmos5l_IOPadInOut16mA[[0]]
+Duplicate cell sg13cmos5l_IOPadInOut30mA in file
+Renaming original cell to sg13cmos5l_IOPadInOut30mA[[0]]
+Duplicate cell sg13cmos5l_IOPadIOVss in file
+Renaming original cell to sg13cmos5l_IOPadIOVss[[0]]
+Duplicate cell sg13cmos5l_IOPadIOVdd in file
+Renaming original cell to sg13cmos5l_IOPadIOVdd[[0]]
+Duplicate cell sg13cmos5l_Clamp_N20N0D in file
+Renaming original cell to sg13cmos5l_Clamp_N20N0D[[0]]
+Duplicate cell sg13cmos5l_Clamp_P20N0D in file
+Renaming original cell to sg13cmos5l_Clamp_P20N0D[[0]]
+Duplicate cell sg13cmos5l_IOPadAnalog in file
+Renaming original cell to sg13cmos5l_IOPadAnalog[[0]]
+Duplicate cell sg13cmos5l_Gallery in file
+Renaming original cell to sg13cmos5l_Gallery[[0]]
+Duplicate cell sg13cmos5l_a21o_1 in file
+Renaming original cell to sg13cmos5l_a21o_1[[0]]
+Duplicate cell sg13cmos5l_a21o_2 in file
+Renaming original cell to sg13cmos5l_a21o_2[[0]]
+Duplicate cell sg13cmos5l_a21oi_1 in file
+Renaming original cell to sg13cmos5l_a21oi_1[[0]]
+Duplicate cell sg13cmos5l_a21oi_2 in file
+Renaming original cell to sg13cmos5l_a21oi_2[[0]]
+Duplicate cell sg13cmos5l_a221oi_1 in file
+Renaming original cell to sg13cmos5l_a221oi_1[[0]]
+Duplicate cell sg13cmos5l_and2_1 in file
+Renaming original cell to sg13cmos5l_and2_1[[0]]
+Duplicate cell sg13cmos5l_and2_2 in file
+Renaming original cell to sg13cmos5l_and2_2[[0]]
+Duplicate cell sg13cmos5l_and3_1 in file
+Renaming original cell to sg13cmos5l_and3_1[[0]]
+Duplicate cell sg13cmos5l_and3_2 in file
+Renaming original cell to sg13cmos5l_and3_2[[0]]
+Duplicate cell sg13cmos5l_and4_1 in file
+Renaming original cell to sg13cmos5l_and4_1[[0]]
+Duplicate cell sg13cmos5l_and4_2 in file
+Renaming original cell to sg13cmos5l_and4_2[[0]]
+Duplicate cell sg13cmos5l_antennanp in file
+Renaming original cell to sg13cmos5l_antennanp[[0]]
+Duplicate cell sg13cmos5l_buf_1 in file
+Renaming original cell to sg13cmos5l_buf_1[[0]]
+Duplicate cell sg13cmos5l_buf_16 in file
+Renaming original cell to sg13cmos5l_buf_16[[0]]
+Duplicate cell sg13cmos5l_buf_2 in file
+Renaming original cell to sg13cmos5l_buf_2[[0]]
+Duplicate cell sg13cmos5l_buf_4 in file
+Renaming original cell to sg13cmos5l_buf_4[[0]]
+Duplicate cell sg13cmos5l_buf_8 in file
+Renaming original cell to sg13cmos5l_buf_8[[0]]
+Duplicate cell sg13cmos5l_decap_4 in file
+Renaming original cell to sg13cmos5l_decap_4[[0]]
+Duplicate cell sg13cmos5l_decap_8 in file
+Renaming original cell to sg13cmos5l_decap_8[[0]]
+Duplicate cell sg13cmos5l_dfrbp_1 in file
+Renaming original cell to sg13cmos5l_dfrbp_1[[0]]
+Duplicate cell sg13cmos5l_dfrbp_2 in file
+Renaming original cell to sg13cmos5l_dfrbp_2[[0]]
+Duplicate cell sg13cmos5l_dlhq_1 in file
+Renaming original cell to sg13cmos5l_dlhq_1[[0]]
+Duplicate cell sg13cmos5l_dlhr_1 in file
+Renaming original cell to sg13cmos5l_dlhr_1[[0]]
+Duplicate cell sg13cmos5l_dlhrq_1 in file
+Renaming original cell to sg13cmos5l_dlhrq_1[[0]]
+Duplicate cell sg13cmos5l_dllr_1 in file
+Renaming original cell to sg13cmos5l_dllr_1[[0]]
+Duplicate cell sg13cmos5l_dllrq_1 in file
+Renaming original cell to sg13cmos5l_dllrq_1[[0]]
+Duplicate cell sg13cmos5l_dlygate4sd1_1 in file
+Renaming original cell to sg13cmos5l_dlygate4sd1_1[[0]]
+Duplicate cell sg13cmos5l_dlygate4sd2_1 in file
+Renaming original cell to sg13cmos5l_dlygate4sd2_1[[0]]
+Duplicate cell sg13cmos5l_dlygate4sd3_1 in file
+Renaming original cell to sg13cmos5l_dlygate4sd3_1[[0]]
+Duplicate cell sg13cmos5l_ebufn_2 in file
+Renaming original cell to sg13cmos5l_ebufn_2[[0]]
+Duplicate cell sg13cmos5l_ebufn_4 in file
+Renaming original cell to sg13cmos5l_ebufn_4[[0]]
+Duplicate cell sg13cmos5l_ebufn_8 in file
+Renaming original cell to sg13cmos5l_ebufn_8[[0]]
+Duplicate cell sg13cmos5l_einvn_2 in file
+Renaming original cell to sg13cmos5l_einvn_2[[0]]
+Duplicate cell sg13cmos5l_einvn_4 in file
+Renaming original cell to sg13cmos5l_einvn_4[[0]]
+Duplicate cell sg13cmos5l_einvn_8 in file
+Renaming original cell to sg13cmos5l_einvn_8[[0]]
+Duplicate cell sg13cmos5l_inv_1 in file
+Renaming original cell to sg13cmos5l_inv_1[[0]]
+Duplicate cell sg13cmos5l_inv_16 in file
+Renaming original cell to sg13cmos5l_inv_16[[0]]
+Duplicate cell sg13cmos5l_inv_2 in file
+Renaming original cell to sg13cmos5l_inv_2[[0]]
+Duplicate cell sg13cmos5l_inv_4 in file
+Renaming original cell to sg13cmos5l_inv_4[[0]]
+Duplicate cell sg13cmos5l_inv_8 in file
+Renaming original cell to sg13cmos5l_inv_8[[0]]
+Duplicate cell sg13cmos5l_lgcp_1 in file
+Renaming original cell to sg13cmos5l_lgcp_1[[0]]
+Duplicate cell sg13cmos5l_mux2_1 in file
+Renaming original cell to sg13cmos5l_mux2_1[[0]]
+Duplicate cell sg13cmos5l_mux2_2 in file
+Renaming original cell to sg13cmos5l_mux2_2[[0]]
+Duplicate cell sg13cmos5l_mux4_1 in file
+Renaming original cell to sg13cmos5l_mux4_1[[0]]
+Duplicate cell sg13cmos5l_nand2_1 in file
+Renaming original cell to sg13cmos5l_nand2_1[[0]]
+Duplicate cell sg13cmos5l_nand2_2 in file
+Renaming original cell to sg13cmos5l_nand2_2[[0]]
+Duplicate cell sg13cmos5l_nand2b_1 in file
+Renaming original cell to sg13cmos5l_nand2b_1[[0]]
+Duplicate cell sg13cmos5l_nand2b_2 in file
+Renaming original cell to sg13cmos5l_nand2b_2[[0]]
+Duplicate cell sg13cmos5l_nand3_1 in file
+Renaming original cell to sg13cmos5l_nand3_1[[0]]
+Duplicate cell sg13cmos5l_nand3b_1 in file
+Renaming original cell to sg13cmos5l_nand3b_1[[0]]
+Duplicate cell sg13cmos5l_nand4_1 in file
+Renaming original cell to sg13cmos5l_nand4_1[[0]]
+Duplicate cell sg13cmos5l_nor2_1 in file
+Renaming original cell to sg13cmos5l_nor2_1[[0]]
+Duplicate cell sg13cmos5l_nor2_2 in file
+Renaming original cell to sg13cmos5l_nor2_2[[0]]
+Duplicate cell sg13cmos5l_nor2b_1 in file
+Renaming original cell to sg13cmos5l_nor2b_1[[0]]
+Duplicate cell sg13cmos5l_nor2b_2 in file
+Renaming original cell to sg13cmos5l_nor2b_2[[0]]
+Duplicate cell sg13cmos5l_nor3_1 in file
+Renaming original cell to sg13cmos5l_nor3_1[[0]]
+Duplicate cell sg13cmos5l_nor3_2 in file
+Renaming original cell to sg13cmos5l_nor3_2[[0]]
+Duplicate cell sg13cmos5l_nor4_1 in file
+Renaming original cell to sg13cmos5l_nor4_1[[0]]
+Duplicate cell sg13cmos5l_nor4_2 in file
+Renaming original cell to sg13cmos5l_nor4_2[[0]]
+Duplicate cell sg13cmos5l_o21ai_1 in file
+Renaming original cell to sg13cmos5l_o21ai_1[[0]]
+Duplicate cell sg13cmos5l_or2_1 in file
+Renaming original cell to sg13cmos5l_or2_1[[0]]
+Duplicate cell sg13cmos5l_or2_2 in file
+Renaming original cell to sg13cmos5l_or2_2[[0]]
+Duplicate cell sg13cmos5l_or3_1 in file
+Renaming original cell to sg13cmos5l_or3_1[[0]]
+Duplicate cell sg13cmos5l_or3_2 in file
+Renaming original cell to sg13cmos5l_or3_2[[0]]
+Duplicate cell sg13cmos5l_or4_1 in file
+Renaming original cell to sg13cmos5l_or4_1[[0]]
+Duplicate cell sg13cmos5l_or4_2 in file
+Renaming original cell to sg13cmos5l_or4_2[[0]]
+Duplicate cell sg13cmos5l_sdfbbp_1 in file
+Renaming original cell to sg13cmos5l_sdfbbp_1[[0]]
+Duplicate cell sg13cmos5l_sighold in file
+Renaming original cell to sg13cmos5l_sighold[[0]]
+Duplicate cell sg13cmos5l_slgcp_1 in file
+Renaming original cell to sg13cmos5l_slgcp_1[[0]]
+Duplicate cell sg13cmos5l_tiehi in file
+Renaming original cell to sg13cmos5l_tiehi[[0]]
+Duplicate cell sg13cmos5l_tielo in file
+Renaming original cell to sg13cmos5l_tielo[[0]]
+Duplicate cell sg13cmos5l_xnor2_1 in file
+Renaming original cell to sg13cmos5l_xnor2_1[[0]]
+Duplicate cell sg13cmos5l_xor2_1 in file
+Renaming original cell to sg13cmos5l_xor2_1[[0]]
+Duplicate cell sg13cmos5l_a22oi_1 in file
+Renaming original cell to sg13cmos5l_a22oi_1[[0]]
+Duplicate cell sg13cmos5l_sdfrbpq_1 in file
+Renaming original cell to sg13cmos5l_sdfrbpq_1[[0]]
+Duplicate cell sg13cmos5l_sdfrbpq_2 in file
+Renaming original cell to sg13cmos5l_sdfrbpq_2[[0]]
+Duplicate cell sg13cmos5l_sdfrbp_2 in file
+Renaming original cell to sg13cmos5l_sdfrbp_2[[0]]
+Duplicate cell sg13cmos5l_sdfrbp_1 in file
+Renaming original cell to sg13cmos5l_sdfrbp_1[[0]]
+Duplicate cell sg13cmos5l_dfrbpq_2 in file
+Renaming original cell to sg13cmos5l_dfrbpq_2[[0]]
+Duplicate cell sg13cmos5l_dfrbpq_1 in file
+Renaming original cell to sg13cmos5l_dfrbpq_1[[0]]
+Duplicate cell sg13cmos5l_fill_1 in file
+Renaming original cell to sg13cmos5l_fill_1[[0]]
+Duplicate cell sg13cmos5l_fill_2 in file
+Renaming original cell to sg13cmos5l_fill_2[[0]]
+Duplicate cell sg13cmos5l_fill_4 in file
+Renaming original cell to sg13cmos5l_fill_4[[0]]
+Duplicate cell sg13cmos5l_fill_8 in file
+Renaming original cell to sg13cmos5l_fill_8[[0]]
+Cell: MSPHY9932-main/model/spice/MSPHY9932.spice exists already, and will be overwritten.
+Call to undefined subcircuit buf_1
+Creating placeholder cell definition.
+Call to undefined subcircuit buf_2
+Creating placeholder cell definition.
+Call to undefined subcircuit buf_4
+Creating placeholder cell definition.
+Call to undefined subcircuit buf_8
+Creating placeholder cell definition.
+Call to undefined subcircuit buf_16
+Creating placeholder cell definition.
+Call to undefined subcircuit buf_32
+Creating placeholder cell definition.
+Call to undefined subcircuit single_bsw
+Creating placeholder cell definition.
+
+No setup file specified.  Using trivial default setup.
+
+No property as found for device rfpmos
+No property ad found for device rfpmos
+No property ps found for device rfpmos
+No property pd found for device rfpmos
+No property area found for device cap_mfringe
+No property as found for device rfnmos
+No property ad found for device rfnmos
+No property ps found for device rfnmos
+No property pd found for device rfnmos
+Comparison output logged to file release/v.1.0.0/lvs/lvs_full_output.txt
+Logging to file "release/v.1.0.0/lvs/lvs_full_output.txt" enabled
+Circuit sg13_lv_nmos contains no devices.
+Circuit sg13_lv_pmos contains no devices.
+Circuit dantenna contains no devices.
+Circuit sg13_hv_nmos contains no devices.
+Circuit sg13_hv_pmos contains no devices.
+Circuit rppd contains no devices.
+Circuit dpantenna contains no devices.
+
+Contents of circuit 1:  Circuit: 'MSPHY9932_flat'
+Circuit MSPHY9932_flat contains 4911 device instances.
+  Class: sg13_hv_nmos          instances: 558
+  Class: rppd                  instances:  80
+  Class: dantenna              instances:  57
+  Class: dpantenna             instances:  56
+  Class: sg13_lv_pmos          instances: 1687
+  Class: sg13_lv_nmos          instances: 1703
+  Class: sg13_hv_pmos          instances: 770
+Circuit contains 1430 nets.
+Contents of circuit 2:  Circuit: 'MSPHY9932'
+Circuit MSPHY9932 contains 2569 device instances.
+  Class: rfpmos                instances:   8
+  Class: cap_mfringe           instances:   6
+  Class: sg13_lv_pmos          instances: 1266
+  Class: sg13_lv_nmos          instances: 1281
+  Class: rfnmos                instances:   8
+Circuit contains 1290 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'MSPHY9932_flat'
+Circuit MSPHY9932_flat contains 2817 device instances.
+  Class: sg13_hv_nmos          instances:  41
+  Class: rppd                  instances:  80
+  Class: dantenna              instances:   9
+  Class: dpantenna             instances:  37
+  Class: sg13_lv_pmos          instances: 1299
+  Class: sg13_lv_nmos          instances: 1313
+  Class: sg13_hv_pmos          instances:  38
+Circuit contains 1430 nets.
+Contents of circuit 2:  Circuit: 'MSPHY9932'
+Circuit MSPHY9932 contains 2513 device instances.
+  Class: rfpmos                instances:   8
+  Class: cap_mfringe           instances:   6
+  Class: sg13_lv_pmos          instances: 1238
+  Class: sg13_lv_nmos          instances: 1253
+  Class: rfnmos                instances:   8
+Circuit contains 1290 nets.
+
+Circuit 1 contains 2817 devices, Circuit 2 contains 2513 devices. *** MISMATCH ***
+Circuit 1 contains 1382 nets,    Circuit 2 contains 1290 nets. *** MISMATCH ***
+
+
+Final result: 
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+Logging to file "release/v.1.0.0/lvs/lvs_full_output.txt" disabled
+LVS Done.
+done
