@@ -1,0 +1,28 @@
+** sch_path: /foss/designs/adc8b/sch/cmp.sch
+**.subckt cmp vdd vss vip vin clk rdy outp outn
+*.ipin vdd
+*.ipin vss
+*.ipin vip
+*.ipin vin
+*.ipin clk
+*.opin rdy
+*.opin outp
+*.opin outn
+XM14 outn clk vdd vdd sg13_lv_pmos w=1.0u l=0.13u ng=2 m=1 mm_ok=1
+XM1 outp outn vdd vdd sg13_lv_pmos w=2.5u l=0.13u ng=2 m=1 mm_ok=1
+XM2 outp clk vdd vdd sg13_lv_pmos w=1.0u l=0.13u ng=2 m=1 mm_ok=1
+XM3 outn outp vdd vdd sg13_lv_pmos w=2.5u l=0.13u ng=2 m=1 mm_ok=1
+XM5 net4 vip net1 vss sg13_lv_nmos w=10.0u l=0.13u ng=2 m=1 mm_ok=1
+XM6 net1 clk vss vss sg13_lv_nmos w=2.0u l=0.13u ng=4 m=1 mm_ok=1
+XM7 net5 vin net1 vss sg13_lv_nmos w=10.0u l=0.13u ng=2 m=1 mm_ok=1
+x1 rdy net2 net3 vdd vss sg13cmos5l_or2_1
+XM4 outn outp net4 vss sg13_lv_nmos w=10.0u l=0.13u ng=2 m=1 mm_ok=1
+XM8 outp outn net5 vss sg13_lv_nmos w=10.0u l=0.13u ng=2 m=1 mm_ok=1
+XM9 net4 clk vdd vdd sg13_lv_pmos w=1.0u l=0.13u ng=2 m=1 mm_ok=1
+XM10 net5 clk vdd vdd sg13_lv_pmos w=1.0u l=0.13u ng=2 m=1 mm_ok=1
+x6 net2 outp vdd vss sg13cmos5l_inv_1
+x7 net3 outn vdd vss sg13cmos5l_inv_1
+x2 vdd vss sg13cmos5l_decap_4
+x3 vdd vss sg13cmos5l_decap_4
+**.ends
+.end
