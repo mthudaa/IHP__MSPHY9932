@@ -1,0 +1,26 @@
+{
+  "name": "MSPHY9932",
+  "design_type": "M",
+  "technology": "IHP",
+  "unique_id": "9932",
+  "license": "Apache-2.0",
+  "trl": 2,
+  "sealring_x": 0.0,
+  "sealring_y": 0.0,
+  "repository": "",
+  "pdk_version": "sg13cmos5l",
+  "process": "SG13G2",
+  "dependencies": {},
+  "tools": {},
+  "top_cell_name": "MSPHY9932",
+  "short_description": "Combination of ADC and DAC mixed-signal block",
+  "long_description": "12-bit SAR ADC with differential bootstrap switch, asynchronous comparator, capacitive DAC, and serialized digital output. Designed for IHP SG13CMOS5L (130nm) PDK.",
+  "category": "Mixed-Signal",
+  "subcategory": "Mixed-Signal PHY (MSPHY)",
+  "release": {
+    "version": "v.1.0.0",
+    "gds": "release/v.1.0.0/gds",
+    "netlist": "release/v.1.0.0/netlist",
+    "doc": "release/v.1.0.0/doc"
+  }
+}
