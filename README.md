@@ -1,7 +1,7 @@
 # IHP__MSPHY9932 — Mixed-Signal ADC + DAC IP
 
 **12-bit SAR ADC with sigma-delta DAC and I2S digital interface**
-Target PDK: IHP SG13CMOS5L (SG13G2, 130nm)
+Target PDK: IHP SG13CMOS5L (130nm CMOS)
 
 ## Quick Links
 
