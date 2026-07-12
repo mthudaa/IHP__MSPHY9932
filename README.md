@@ -155,7 +155,7 @@ IHP__MSPHY9932/
 
 | Parameter | Value |
 |---|---|
-| Technology | IHP SG13G2 (130nm CMOS) |
+| Technology | IHP SG13CMOS5L (130nm CMOS) |
 | Die size | 1050 × 1050 µm (with sealring) |
 | ADC Resolution | 12-bit |
 | DAC Type | Sigma-delta with I2S input |
@@ -323,4 +323,6 @@ Apache-2.0
 
 ## Authors
 
-Muhammad Huda — IHP Open MPW / SG13CMOS5L
+Muhammad T. Huda
+Astria Nur Irfansyah
+Doni Lutfi Anggara
