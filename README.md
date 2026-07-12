@@ -21,8 +21,28 @@ IHP__MSPHY9932/
 │   │   ├── MSPHY9932.gds            #     Full chip (1050×1050µm with pad ring)
 │   │   └── adc8b.gds                #     ADC core
 │   ├── layout/magic/                # Magic layout views
-│   ├── rtl/                         # Verilog RTL (sar12b + top_i2s_asic)
-│   ├── synthesis/                   # LibreLane synthesis outputs
+│   ├── rtl/                         # Verilog RTL
+│   │   ├── sar12b.v                 #     SAR controller (part of adc8b)
+│   │   ├── serial_out.v             #     Serial output serializer
+│   │   ├── cdac_ctrl_pn.v           #     CDAC switch control
+│   │   ├── selftime_OR.v            #     Self-timed logic
+│   │   ├── cyclic_flag.v            #     Conversion cycle tracker
+│   │   ├── out_latch.v              #     Output latch
+│   │   └── top_i2s_asic/            #     Sigma-delta DAC RTL
+│   │       └── top_i2s_asic.v       #     I2S decoder + SD modulator
+│   ├── synthesis/                   # LibreLane synthesis
+│   │   ├── config.tcl               #     sar12b synthesis config
+│   │   ├── top_i2s_asic/            #     DAC synthesis deliverables
+│   │   │   ├── top_i2s_asic.gds     #     Synthesized DAC GDS (35K cells)
+│   │   │   ├── top_i2s_asic.lef     #     LEF for PnR
+│   │   │   ├── top_i2s_asic.nl.v    #     Post-synthesis Verilog netlist
+│   │   │   ├── top_i2s_asic.def     #     DEF placement
+│   │   │   ├── top_i2s_asic.sdc     #     Timing constraints
+│   │   │   ├── top_i2s_asic.spice   #     SPICE netlist
+│   │   │   ├── sdf/                 #     SDF (3 corners)
+│   │   │   ├── spef/               #     SPEF parasitics
+│   │   │   ├── metrics.csv          #     Synthesis metrics
+│   │   │   └── metrics.json         #     Synthesis metrics (JSON)
 │   ├── scripts/                     # LVS helper scripts
 │   │   ├── flatten_mos_devices.py   #     IHP PDK MOS wrapper flattener
 │   │   └── iic-lvs.sh              #     IIC@JKU LVS automation
