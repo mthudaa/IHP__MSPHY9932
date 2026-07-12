@@ -167,6 +167,33 @@ IHP__MSPHY9932/
 | Full chip | 17,840 LV devices | ✓ | 8,919 pmos + 8,919 nmos match |
 | IO pad (HV/ESD) | 146 devices | — | Layout-only (standard PDK cells) |
 
+### LVS Caveats
+
+#### 1. cap8b MOM Capacitor Extraction (Known Tool Limitation)
+
+Magic's `ext2spice lvs` cannot trace through MOM capacitor layers. The `cap8b` cell extracts as an **empty subcircuit** (0 devices, 24 disconnected ports) in LVS mode. The schematic `cap8b` contains 24 capacitor elements (C-elements from `vc` to each `h_sw[i]`/`l_sw[i]` bit).
+
+**Impact:**
+
+| | Layout (LVS extraction) | Schematic |
+|---|---|---|
+| cap8b ports | 24 (missing `h_sw[9]`) | 25 (includes `h_sw[9]`) |
+| cap8b devices | 0 (empty) | 24 C-elements |
+| side_cap8b nets | 46 | 47 |
+| adc8b nets | 104 | 105 |
+
+The 1-net gap (`h_sw[9]`) is an extraction artifact — `h_sw[9]` port is present in the GDS but Magic's MOM layer tracing drops it. The `buf_2_3/z` net in the layout extraction is a Magic naming collision (two buf_2 instances assigned the same pin alias at the cap8b cell boundary).
+
+**Mitigation:** The PEX extraction (`ext2spice` with coupling capacitance, not `ext2spice lvs`) correctly captures all 24 MOM capacitors and their connectivity. All active devices (MOSFETs) match exactly. The cap8b is a passive structure whose values are verified by PEX.
+
+#### 2. IO Pad / ESD Structures
+
+The schematic (`MSPHY9932.spice`) models only the core (`adc8b` + `top_i2s_asic`). The IO pad ring, ESD clamps, sealring, and bondpads are layout-only additions (standard IHP PDK cells). This accounts for the 146-device difference in full-chip LVS (HV transistors + PPD resistors + antenna diodes). These are verified separately by DRC.
+
+#### 3. IHP PDK LVS Setup — Experimental Status
+
+IHP's official LVS route is **KLayout-LVS**, which is marked experimental for the SG13CMOS5L PDK (generates auto-named internal pins, always reports mismatch). The community route — **Magic 8.3 + Netgen 1.5** via `iic-lvs.sh` — works reliably for MOSFET-level comparison. The setup file requires both sides to use flat M-element MOSFETs (no subcircuit wrappers), which is handled by `flatten_mos_devices.py` in `scripts/`.
+
 ## How to Reproduce
 
 ### Prerequisites
