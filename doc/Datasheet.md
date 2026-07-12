@@ -2,7 +2,30 @@
 
 ## Overview
 
-**MSPHY9932** is a 12-bit SAR ADC mixed-signal IP block designed for the IHP SG13CMOS5L (130nm) process. It combines an analog-to-digital converter with capacitive DAC, asynchronous comparator, bootstrap sampling switch, and serialized digital output.
+**MSPHY9932** is a mixed-signal IP combining a 12-bit SAR ADC and a sigma-delta DAC with I2S digital interface, designed for the IHP SG13CMOS5L (130nm) process.
+
+## Block Diagram
+
+```
+                        ┌─────────────────────────────────────┐
+                        │          MSPHY9932                  │
+                        │                                     │
+  i2s_bclk ────────────┤  ┌───────────────────────────────┐  │
+  i2s_lrck ────────────┤  │       top_i2s_asic            │  │
+  i2s_sdata ───────────┤  │  I2S Decoder → SD Modulator   ├──┼── sd_out
+  sd_clk ──────────────┤  │  (~35K stdcell instances)     │  │
+  rst_n ───────────────┤  └───────────────────────────────┘  │
+                        │                                     │
+  vip ─────────────────┤  ┌───────────────────────────────┐  │
+  vin ─────────────────┤  │          adc8b                │  │
+  cks ─────────────────┤  │  diff_bsw → cmp → sar12b      ├──┼── data[0:2]
+                        │  │  side_cap8b×2, buf_1..buf_32 │  ├── cko
+                        │  │  cap8b (MOM cap array)       │  ├── frame
+                        │  └───────────────────────────────┘  │
+                        │                                     │
+                        │  IO Pad Ring (IOPadAnalog, ESD)     │
+                        └─────────────────────────────────────┘
+```
 
 ## Key Specifications
 
@@ -10,50 +33,63 @@
 |---|---|
 | Technology | IHP SG13CMOS5L (130nm, SG13G2) |
 | Die Size | 1050 × 1050 µm (with sealring) |
-| Resolution | 12-bit |
-| Conversion Rate | ~10 MS/s (simulated) |
+| ADC Resolution | 12-bit SAR |
+| DAC Type | Sigma-delta with I2S input |
 | Analog Supply | 1.2V (vddr) |
 | Digital Supply | 1.2V (vdd) |
 | IO Supply | 3.3V (iovdd) |
-| Total Power | ~226 µW (simulated at 10MS/s) |
-| Input Range | 0 - 1.2V differential |
-| Output Format | Serialized 3-bit (4 CKO cycles per sample) |
+| ADC Power | ~226 µW (simulated at 10 MS/s) |
+| ADC Input | 0–1.2V differential |
+| ADC Output | Serial 3-bit (4 CKO cycles per sample) |
+| DAC Input | I2S (bclk/lrck/sdata) |
 
 ## Pin Description
 
-| Pin | Direction | Description |
-|---|---|---|
-| vdd | Power | Core digital supply (1.2V) |
-| vddr | Power | Analog supply (1.2V) |
-| vss | Ground | Common ground |
-| vip | Input | Positive analog input |
-| vin | Input | Negative analog input |
-| cks | Input | Sample clock |
-| data[0:2] | Output | Serialized 3-bit data output |
-| cko | Output | Output data clock |
-| frame | Output | Frame sync (marks MSB group) |
+| Pin | Direction | Domain | Description |
+|---|---|---|---|
+| vdd | Power | 1.2V | Core digital supply |
+| vddr | Power | 1.2V | Analog supply |
+| vss | Ground | — | Common ground |
+| vip | Input | vddr | Positive analog input (differential) |
+| vin | Input | vddr | Negative analog input (differential) |
+| cks | Input | 3.3V | Sample clock |
+| data[0:2] | Output | 3.3V | Serialized 3-bit ADC data |
+| cko | Output | 3.3V | Output data clock |
+| frame | Output | 3.3V | Frame sync (marks MSB group) |
+| i2s_bclk | Input | 3.3V | I2S bit clock |
+| i2s_lrck | Input | 3.3V | I2S word select (L/R clock) |
+| i2s_sdata | Input | 3.3V | I2S serial data in |
+| sd_out | Output | 3.3V | Sigma-delta DAC output |
+| sd_clk | Input | 3.3V | DAC clock |
+| rst_n | Input | 3.3V | Active-low reset |
 
 ## IO Pads
 
-All pins use IHP SG13CMOS5L IOPadAnalog cells with ESD protection.
-Supply pins use IOPadVdd/IOPadVss.
+All signal pins use IHP SG13CMOS5L IOPadAnalog / IOPadIn / IOPadOut cells with ESD protection.
+Supply pins use IOPadVdd (vdd/vddr) and IOPadVss.
+Chip includes full sealring, corner cells, ESD clamp stacks (P2N2D through P15N15D, N43N43D4R), and secondary protection.
 
-## Block Diagram
+## ADC Timing
 
 ```
-  vip/vin → [diff_bsw] → [cmp] → [sar12b] → data[0:2]
-                ↓           ↓                    ↓
-            [side_cap8b] [side_cap8b]          cko, frame
+  cks  ──┐     ┌─────┐     ┌─────┐
+         └─────┘     └─────┘     └──
+
+  cko  ──┐  ┌──┐  ┌──┐  ┌──┐  ┌──
+         └──┘  └──┘  └──┘  └──┘
+
+  frame ──────┐                    ┌──
+              └────────────────────┘
+
+  data  ──<MSB[2:0]><[2:0]><[2:0]><LSB[2:0]>
 ```
 
-## Directory Structure
+## Verification Status
 
-- `gds/` - Layout files (GDSII)
-- `sch/` - Schematic files (xschem)
-- `simulations/` - SPICE netlists and testbenches
-
-## Verification
-
-- DRC: Main rules passed (0 errors)
-- LVS: Core match (circuits match uniquely), top-level pin match
-- Simulation: Functional verification with Xyce SPICE simulator
+| Check | Result |
+|---|---|
+| DRC (mandatory) | 0 errors |
+| LVS (adc8b core) | 49/49 subcircuits matched |
+| LVS (full-chip core) | 17,840 LV devices matched |
+| PEX (CC extraction) | 23,253 coupling caps |
+| SPICE simulation | Functional verified |
