@@ -1,0 +1,51 @@
+* NGSPICE file created from cmp_flat.ext - technology: ihp-sg13cmos5l
+
+.subckt cmp_flat vdd vss rdy vin vip outn outp clk
+X0 outp clk vdd vdd sg13_lv_pmos ad=0.17p pd=1.68u as=95f ps=0.88u w=0.5u l=0.13u
+X1 vss a_581042_926846# a_581154_926910# vss sg13_lv_nmos ad=0.1426p pd=1.16u as=0.1428p ps=1.52u w=0.42u l=0.5u
+X2 sg13cmos5l_or2_1$1_0.X a_579900_927220# vss vss sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1469p ps=1.155u w=0.74u l=0.13u
+X3 vss vdd vss vss sg13_lv_nmos ad=0.1428p pd=1.52u as=41.9265p ps=0.27795m w=0.42u l=1u
+X4 vdd clk a_574318_928566# vdd sg13_lv_pmos ad=95f pd=0.88u as=0.17p ps=1.68u w=0.5u l=0.13u
+X5 a_574934_925864# clk vss vss sg13_lv_nmos ad=0.17p pd=1.68u as=95f ps=0.88u w=0.5u l=0.13u
+X6 a_574934_925864# clk vss vss sg13_lv_nmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.13u
+X7 rdy a_581154_926910# vdd vdd sg13_lv_pmos ad=0.4256p pd=3u as=0.2254p ps=1.53u w=1.12u l=0.13u
+X8 sg13cmos5l_inv_1$1_1.Y outn vss vss sg13_lv_nmos ad=0.2516p pd=2.16u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X9 a_577144_925864# vip a_574934_925864# vss sg13_lv_nmos ad=1.7p pd=10.68u as=0.95p ps=5.38u w=5u l=0.13u
+X10 vss sg13cmos5l_inv_1$1_0.Y a_579900_927220# vss sg13_lv_nmos ad=0.1469p pd=1.155u as=0.1045p ps=0.93u w=0.55u l=0.13u
+X11 outn clk vdd vdd sg13_lv_pmos ad=0.17p pd=1.68u as=95f ps=0.88u w=0.5u l=0.13u
+X12 outn outp vdd vdd sg13_lv_pmos ad=0.425p pd=3.18u as=0.2375p ps=1.63u w=1.25u l=0.13u
+X13 sg13cmos5l_inv_1$1_1.Y outn vdd vdd sg13_lv_pmos ad=0.3808p pd=2.92u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X14 a_577144_925864# outp outn vss sg13_lv_nmos ad=1.7p pd=10.68u as=0.95p ps=5.38u w=5u l=0.13u
+X15 outp outn a_574318_928566# vss sg13_lv_nmos ad=0.95p pd=5.38u as=1.7p ps=10.68u w=5u l=0.13u
+X16 a_579900_927220# sg13cmos5l_inv_1$1_1.Y vss vss sg13_lv_nmos ad=0.1045p pd=0.93u as=0.187p ps=1.78u w=0.55u l=0.13u
+X17 vss sg13cmos5l_or2_1$1_0.X a_580772_926846# vss sg13_lv_nmos ad=79.8f pd=0.8u as=0.1428p ps=1.52u w=0.42u l=0.13u
+X18 vdd outn outp vdd sg13_lv_pmos ad=0.2375p pd=1.63u as=0.425p ps=3.18u w=1.25u l=0.13u
+X19 vdd clk outp vdd sg13_lv_pmos ad=95f pd=0.88u as=0.17p ps=1.68u w=0.5u l=0.13u
+X20 vdd a_581042_926846# a_581154_926910# vdd sg13_lv_pmos ad=0.2254p pd=1.53u as=0.34p ps=2.68u w=1u l=0.5u
+X21 vdd vss vdd vdd sg13_lv_pmos ad=0.34p pd=2.68u as=42.0809p ps=0.28309m w=1u l=1u
+X22 vdd sg13cmos5l_or2_1$1_0.X a_580772_926846# vdd sg13_lv_pmos ad=0.1523p pd=1.38u as=0.1428p ps=1.52u w=0.42u l=0.13u
+X23 sg13cmos5l_inv_1$1_0.Y outp vss vss sg13_lv_nmos ad=0.2516p pd=2.16u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X24 rdy a_581154_926910# vss vss sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1426p ps=1.16u w=0.74u l=0.13u
+X25 a_574318_928566# clk vdd vdd sg13_lv_pmos ad=0.17p pd=1.68u as=95f ps=0.88u w=0.5u l=0.13u
+X26 outp outn vdd vdd sg13_lv_pmos ad=0.425p pd=3.18u as=0.2375p ps=1.63u w=1.25u l=0.13u
+X27 vss clk a_574934_925864# vss sg13_lv_nmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.13u
+X28 vss clk a_574934_925864# vss sg13_lv_nmos ad=95f pd=0.88u as=0.17p ps=1.68u w=0.5u l=0.13u
+X29 sg13cmos5l_inv_1$1_0.Y outp vdd vdd sg13_lv_pmos ad=0.3808p pd=2.92u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X30 vdd sg13cmos5l_inv_1$1_0.Y a_579994_927220# vdd sg13_lv_pmos ad=0.2226p pd=1.535u as=0.1596p ps=1.22u w=0.84u l=0.13u
+X31 a_574934_925864# vin a_574318_928566# vss sg13_lv_nmos ad=0.95p pd=5.38u as=1.7p ps=10.68u w=5u l=0.13u
+X32 vss vdd vss vss sg13_lv_nmos ad=0.1428p pd=1.52u as=0 ps=0 w=0.42u l=1u
+X33 a_577144_925864# clk vdd vdd sg13_lv_pmos ad=0.17p pd=1.68u as=95f ps=0.88u w=0.5u l=0.13u
+X34 a_574934_925864# vip a_577144_925864# vss sg13_lv_nmos ad=0.95p pd=5.38u as=1.7p ps=10.68u w=5u l=0.13u
+X35 a_581042_926846# a_580772_926846# vdd vdd sg13_lv_pmos ad=0.34p pd=2.68u as=0.1523p ps=1.38u w=1u l=0.5u
+X36 vdd clk outn vdd sg13_lv_pmos ad=95f pd=0.88u as=0.17p ps=1.68u w=0.5u l=0.13u
+X37 vdd outp outn vdd sg13_lv_pmos ad=0.2375p pd=1.63u as=0.425p ps=3.18u w=1.25u l=0.13u
+X38 outn outp a_577144_925864# vss sg13_lv_nmos ad=0.95p pd=5.38u as=1.7p ps=10.68u w=5u l=0.13u
+X39 a_579994_927220# sg13cmos5l_inv_1$1_1.Y a_579900_927220# vdd sg13_lv_pmos ad=0.1596p pd=1.22u as=0.2856p ps=2.36u w=0.84u l=0.13u
+X40 a_574318_928566# outn outp vss sg13_lv_nmos ad=1.7p pd=10.68u as=0.95p ps=5.38u w=5u l=0.13u
+X41 a_581042_926846# a_580772_926846# vss vss sg13_lv_nmos ad=0.1428p pd=1.52u as=79.8f ps=0.8u w=0.42u l=0.5u
+X42 vdd clk a_577144_925864# vdd sg13_lv_pmos ad=95f pd=0.88u as=0.17p ps=1.68u w=0.5u l=0.13u
+X43 vdd vss vdd vdd sg13_lv_pmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=1u
+X44 sg13cmos5l_or2_1$1_0.X a_579900_927220# vdd vdd sg13_lv_pmos ad=0.3976p pd=2.95u as=0.2226p ps=1.535u w=1.12u l=0.13u
+X45 a_574318_928566# vin a_574934_925864# vss sg13_lv_nmos ad=1.7p pd=10.68u as=0.95p ps=5.38u w=5u l=0.13u
+.ends
+

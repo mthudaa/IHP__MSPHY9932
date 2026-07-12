@@ -1,0 +1,60 @@
+
+Cell cap8b (0) disconnected node: vss
+Cell cap8b (0) disconnected node: vdd
+Cell cap8b (0) disconnected node: l_sw[10]
+Cell cap8b (0) disconnected node: l_sw[9]
+Cell cap8b (0) disconnected node: l_sw[8]
+Cell cap8b (0) disconnected node: l_sw[7]
+Cell cap8b (0) disconnected node: l_sw[6]
+Cell cap8b (0) disconnected node: l_sw[5]
+Cell cap8b (0) disconnected node: l_sw[4]
+Cell cap8b (0) disconnected node: l_sw[3]
+Cell cap8b (0) disconnected node: l_sw[2]
+Cell cap8b (0) disconnected node: l_sw[1]
+Cell cap8b (0) disconnected node: l_sw[0]
+Cell cap8b (0) disconnected node: h_sw[0]
+Cell cap8b (0) disconnected node: h_sw[1]
+Cell cap8b (0) disconnected node: h_sw[2]
+Cell cap8b (0) disconnected node: h_sw[3]
+Cell cap8b (0) disconnected node: h_sw[4]
+Cell cap8b (0) disconnected node: h_sw[5]
+Cell cap8b (0) disconnected node: h_sw[6]
+Cell cap8b (0) disconnected node: h_sw[7]
+Cell cap8b (0) disconnected node: h_sw[8]
+Cell cap8b (0) disconnected node: h_sw[10]
+Cell cap8b (0) disconnected node: vc
+
+Subcircuit pins:
+Circuit 1: cap8b                           |Circuit 2: cap8b                           
+-------------------------------------------|-------------------------------------------
+vss                                        |vss                                        
+vdd                                        |vdd                                        
+l_sw[10]                                   |l_sw[10]                                   
+l_sw[9]                                    |l_sw[9]                                    
+l_sw[8]                                    |l_sw[8]                                    
+l_sw[7]                                    |l_sw[7]                                    
+l_sw[6]                                    |l_sw[6]                                    
+l_sw[5]                                    |l_sw[5]                                    
+l_sw[4]                                    |l_sw[4]                                    
+l_sw[3]                                    |l_sw[3]                                    
+l_sw[2]                                    |l_sw[2]                                    
+l_sw[1]                                    |l_sw[1]                                    
+l_sw[0]                                    |l_sw[0]                                    
+h_sw[0]                                    |h_sw[0]                                    
+h_sw[1]                                    |h_sw[1]                                    
+h_sw[2]                                    |h_sw[2]                                    
+h_sw[3]                                    |h_sw[3]                                    
+h_sw[4]                                    |h_sw[4]                                    
+h_sw[5]                                    |h_sw[5]                                    
+h_sw[6]                                    |h_sw[6]                                    
+h_sw[7]                                    |h_sw[7]                                    
+h_sw[8]                                    |h_sw[8]                                    
+h_sw[10]                                   |h_sw[10]                                   
+vc                                         |vc                                         
+(no matching pin)                          |h_sw[9]                                    
+(no matching pin)                          |h_sw[9]                                    
+---------------------------------------------------------------------------------------
+Cell pin lists for cap8b and cap8b altered to match.
+Device classes cap8b and cap8b are equivalent.
+
+Final result: Top level cell failed pin matching.

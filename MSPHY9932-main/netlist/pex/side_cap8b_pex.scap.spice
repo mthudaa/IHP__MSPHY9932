@@ -1,0 +1,9 @@
+* side_cap8b PEX wrapper - port order matches schematic
+* Schematic: vdd vss in_h_sw[0]..[10] in_l_sw[0]..[10] vc
+* PEX:      in_l_sw[0]..[10] vc vdd vss in_h_sw[10]..[0]
+
+.include /foss/designs/adc8b/IHP__MSPHY9932/MSPHY9932-main/netlist/pex/side_cap8b_pex_cc.spice
+
+.subckt side_cap8b vdd vss in_h_sw[0] in_h_sw[1] in_h_sw[2] in_h_sw[3] in_h_sw[4] in_h_sw[5] in_h_sw[6] in_h_sw[7] in_h_sw[8] in_h_sw[9] in_h_sw[10] in_l_sw[0] in_l_sw[1] in_l_sw[2] in_l_sw[3] in_l_sw[4] in_l_sw[5] in_l_sw[6] in_l_sw[7] in_l_sw[8] in_l_sw[9] in_l_sw[10] vc
+x1 in_l_sw[0] in_l_sw[1] in_l_sw[2] in_l_sw[3] in_l_sw[4] in_l_sw[5] in_l_sw[6] in_l_sw[7] in_l_sw[8] in_l_sw[9] in_l_sw[10] vc vdd vss in_h_sw[10] in_h_sw[9] in_h_sw[8] in_h_sw[7] in_h_sw[6] in_h_sw[5] in_h_sw[4] in_h_sw[3] in_h_sw[2] in_h_sw[1] in_h_sw[0] side_cap8b_flat
+.ends

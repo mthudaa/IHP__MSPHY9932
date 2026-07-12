@@ -1,0 +1,23 @@
+11-Jul-2026 19:07:26 | INFO    | Your Klayout version is: KLayout 0.30.9
+11-Jul-2026 19:07:26 | INFO    | Running SG13CMOS5L LVS checks on design /foss/designs/adc8b/IHP__MSPHY9932/release/v.1.0.0/gds/MSPHY9932.gds on cell diff_bsw
+11-Jul-2026 19:07:29 | ERROR   | KLayout run failed with exit code 1.
+11-Jul-2026 19:07:29 | ERROR   | KLayout stderr: ERROR: In /foss/pdks/ihp-sg13cmos5l/libs.tech/klayout/tech/lvs/sg13cmos5l.lvs: Can't find a schematic counterpart for the top cell diff_bsw - use 'same_circuit' to establish a correspondence
+11-Jul-2026 19:07:29 | ERROR   | KLayout stderr: ERROR: RuntimeError: Can't find a schematic counterpart for the top cell diff_bsw - use 'same_circuit' to establish a correspondence in Executable::execute
+11-Jul-2026 19:07:29 | INFO    | ==============================================================================
+11-Jul-2026 19:07:29 | INFO    | Important Summary
+11-Jul-2026 19:07:29 | INFO    | +------------------+------------------------------------------------------------------------------+
+11-Jul-2026 19:07:29 | INFO    | | Status           | FAIL                                                                         |
+11-Jul-2026 19:07:29 | INFO    | | Mode             | COMPARE                                                                      |
+11-Jul-2026 19:07:29 | INFO    | | Outcome          | Comparison mode: completed (no match/mismatch verdict found).                |
+11-Jul-2026 19:07:29 | INFO    | | Layout           | MSPHY9932.gds                                                                |
+11-Jul-2026 19:07:29 | INFO    | | Top Cell         | diff_bsw                                                                     |
+11-Jul-2026 19:07:29 | INFO    | | Results Dir      | /foss/designs/adc8b/IHP__MSPHY9932/release/v.1.0.0/lvs/klayout_hier/diff_bsw |
+11-Jul-2026 19:07:29 | INFO    | | Warnings         | 0                                                                            |
+11-Jul-2026 19:07:29 | INFO    | | Errors           | 3                                                                            |
+11-Jul-2026 19:07:29 | INFO    | | Run Time (s)     | 3.193                                                                        |
+11-Jul-2026 19:07:29 | INFO    | +------------------+------------------------------------------------------------------------------+
+11-Jul-2026 19:07:29 | ERROR   | Key errors:
+11-Jul-2026 19:07:29 | ERROR   |   - KLayout run failed with exit code 1.
+11-Jul-2026 19:07:29 | ERROR   |   - KLayout stderr: ERROR: In /foss/pdks/ihp-sg13cmos5l/libs.tech/klayout/tech/lvs/sg13cmos5l.lvs: Can't find a schematic counterpart for the top cell diff_bsw - use 'same_circuit' to establish a correspondence
+11-Jul-2026 19:07:29 | ERROR   |   - KLayout stderr: ERROR: RuntimeError: Can't find a schematic counterpart for the top cell diff_bsw - use 'same_circuit' to establish a correspondence in Executable::execute
+11-Jul-2026 19:07:29 | INFO    | ==============================================================================

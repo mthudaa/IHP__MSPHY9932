@@ -1,0 +1,24 @@
+* adc8b Hierarchical PEX CC (per-module)
+* Port order: vdd vddr vss vip vin cks d0 d1 d2 cko frame
+
+.include side_cap8b_pex_cc.spice
+.include sar12b_pex_cc.spice
+.include cmp_pex_cc.spice
+.include diff_bsw_pex_cc.spice
+
+.subckt adc8b_pex vdd vddr vss vip vin cks d0 d1 d2 cko frame
+
+* side_cap8b x2 (DAC arrays)
+x_sc0 vddr vss ph_sw0 ph_sw1 ph_sw2 ph_sw3 ph_sw4 ph_sw5 ph_sw6 ph_sw7 ph_sw8 ph_sw9 ph_sw10 pl_sw0 pl_sw1 pl_sw2 pl_sw3 pl_sw4 pl_sw5 pl_sw6 pl_sw7 pl_sw8 pl_sw9 pl_sw10 vcp side_cap8b_flat
+x_sc1 vdd vss nh_sw0 nh_sw1 nh_sw2 nh_sw3 nh_sw4 nh_sw5 nh_sw6 nh_sw7 nh_sw8 nh_sw9 nh_sw10 nl_sw0 nl_sw1 nl_sw2 nl_sw3 nl_sw4 nl_sw5 nl_sw6 nl_sw7 nl_sw8 nl_sw9 nl_sw10 vcn side_cap8b_flat
+
+* sar12b (digital + serial)
+x_sar vss vdd ckc cko cks comp_p d0 d1 d2 frame nh_sw0 nh_sw10 nh_sw1 nh_sw2 nh_sw3 nh_sw4 nh_sw5 nh_sw6 nh_sw7 nh_sw8 nh_sw9 nl_sw0 nl_sw10 nl_sw1 nl_sw2 nl_sw3 nl_sw4 nl_sw5 nl_sw6 nl_sw7 nl_sw8 nl_sw9 ph_sw0 ph_sw10 ph_sw1 ph_sw2 ph_sw3 ph_sw4 ph_sw5 ph_sw6 ph_sw7 ph_sw8 ph_sw9 pl_sw0 pl_sw10 pl_sw1 pl_sw2 pl_sw3 pl_sw4 pl_sw5 pl_sw6 pl_sw7 pl_sw8 pl_sw9 rdy sar12b_flat
+
+* diff_bsw
+x_dbs vip vin cks vdd vss vcp vcn diff_bsw_flat
+
+* cmp
+x_cmp vdd vss vcp vcn ckc rdy comp_p comp_n cmp_flat
+
+.ends

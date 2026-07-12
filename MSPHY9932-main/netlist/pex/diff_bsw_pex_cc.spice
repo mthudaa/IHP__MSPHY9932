@@ -1,0 +1,266 @@
+* NGSPICE file created from diff_bsw_flat.ext - technology: ihp-sg13cmos5l
+
+.subckt diff_bsw_flat vip vcp vin vcn vdd ck vss
+X0 vdd a_946_4012# a_878_4048# vss sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.13u
+X1 vin a_2906_942# a_2150_942# vss sg13_lv_nmos ad=1.02p pd=6.68u as=1.02p ps=6.68u w=3u l=0.13u
+X2 a_4042_6270# single_bsw_0.sg13cmos5l_inv_1$1_0.A vss vss sg13_lv_nmos ad=95f pd=0.88u as=0.17p ps=1.68u w=0.5u l=0.13u
+X3 single_bsw_1.sg13cmos5l_inv_1$1_2.Y single_bsw_1.sg13cmos5l_inv_1$1_2.A vss vss sg13_lv_nmos ad=0.2516p pd=2.16u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X4 vss vdd vss vss sg13_lv_nmos ad=0.1428p pd=1.52u as=81.33254p ps=0.54442m w=0.42u l=1u
+X5 vdd vss vdd vdd sg13_lv_pmos ad=0.34p pd=2.68u as=31.4284p ps=0.1861m w=1u l=1u
+X6 a_2150_6110# single_bsw_0.sg13cmos5l_inv_1$1_0.A vss vss sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.4u
+X7 vdd vss vdd vdd sg13_lv_pmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=1u
+X8 vss vdd vss vss sg13_lv_nmos ad=0.1428p pd=1.52u as=0 ps=0 w=0.42u l=1u
+X9 a_946_2908# a_878_3004# vdd vss sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.13u
+X10 single_bsw_1.sg13cmos5l_inv_1$1_2.Y single_bsw_1.sg13cmos5l_inv_1$1_2.A vdd vdd sg13_lv_pmos ad=0.3808p pd=2.92u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X11 single_bsw_0.sg13cmos5l_inv_1$1_2.Y single_bsw_0.sg13cmos5l_inv_1$1_2.A vss vss sg13_lv_nmos ad=0.2516p pd=2.16u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X12 vss vdd vss vss sg13_lv_nmos ad=0.1428p pd=1.52u as=0 ps=0 w=0.42u l=1u
+X13 a_3000_5770# vdd a_2906_4128# vss sg13_lv_nmos ad=0.57p pd=3.38u as=1.02p ps=6.68u w=3u l=0.13u
+X14 a_946_4012# a_878_4048# vdd vss sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.13u
+X15 vin a_4144_942# vcn vss sg13_lv_nmos ad=0.85p pd=5.68u as=0.85p ps=5.68u w=2.5u l=0.13u
+X16 single_bsw_1.sg13cmos5l_inv_1$1_0.A ck vdd vdd sg13_lv_pmos ad=0.3808p pd=2.92u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X17 a_4144_5246# vdd a_4042_6270# vss sg13_lv_nmos ad=0.17p pd=1.68u as=95f ps=0.88u w=0.5u l=0.13u
+X18 single_bsw_0.sg13cmos5l_inv_1$1_2.Y single_bsw_0.sg13cmos5l_inv_1$1_2.A vdd vdd sg13_lv_pmos ad=0.3808p pd=2.92u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X19 a_4144_5246# single_bsw_0.sg13cmos5l_inv_1$1_2.Y w_3740_4936# w_3740_4936# sg13_lv_pmos ad=0.17p pd=1.68u as=0.17p ps=1.68u w=0.5u l=0.13u
+X20 single_bsw_1.sg13cmos5l_inv_1$1_0.Y single_bsw_1.sg13cmos5l_inv_1$1_0.A vdd vdd sg13_lv_pmos ad=0.3808p pd=2.92u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X21 vdd vss vdd vdd sg13_lv_pmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=1u
+X22 vdd single_bsw_0.sg13cmos5l_inv_1$1_2.A a_2906_4128# vdd sg13_lv_pmos ad=0.17p pd=1.68u as=0.17p ps=1.68u w=0.5u l=0.13u
+X23 vss single_bsw_1.sg13cmos5l_inv_1$1_0.A a_3000_942# vss sg13_lv_nmos ad=1.02p pd=6.68u as=0.57p ps=3.38u w=3u l=0.13u
+X24 single_bsw_1.sg13cmos5l_inv_1$1_0.A ck vss vss sg13_lv_nmos ad=0.2516p pd=2.16u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X25 single_bsw_1.sg13cmos5l_inv_1$1_0.Y single_bsw_1.sg13cmos5l_inv_1$1_0.A vss vss sg13_lv_nmos ad=0.2516p pd=2.16u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X26 single_bsw_0.sg13cmos5l_inv_1$1_0.A ck vdd vdd sg13_lv_pmos ad=0.3808p pd=2.92u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X27 vdd single_bsw_1.sg13cmos5l_inv_1$1_2.A a_2906_942# vdd sg13_lv_pmos ad=0.17p pd=1.68u as=0.17p ps=1.68u w=0.5u l=0.13u
+X28 a_2150_942# single_bsw_1.sg13cmos5l_inv_1$1_0.A vss vss sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.4u
+X29 single_bsw_0.sg13cmos5l_inv_1$1_0.A ck vss vss sg13_lv_nmos ad=0.2516p pd=2.16u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X30 a_3000_942# vdd a_2906_942# vss sg13_lv_nmos ad=0.57p pd=3.38u as=1.02p ps=6.68u w=3u l=0.13u
+X31 single_bsw_0.sg13cmos5l_inv_1$1_0.Y single_bsw_0.sg13cmos5l_inv_1$1_0.A vdd vdd sg13_lv_pmos ad=0.3808p pd=2.92u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X32 vdd vss vdd vdd sg13_lv_pmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=1u
+X33 a_4144_942# single_bsw_1.sg13cmos5l_inv_1$1_2.Y w_3740_1656# w_3740_1656# sg13_lv_pmos ad=0.17p pd=1.68u as=0.17p ps=1.68u w=0.5u l=0.13u
+X34 single_bsw_0.sg13cmos5l_inv_1$1_0.Y single_bsw_0.sg13cmos5l_inv_1$1_0.A vss vss sg13_lv_nmos ad=0.2516p pd=2.16u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X35 w_3740_1656# a_878_3004# vdd vss sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.13u
+X36 a_4042_942# single_bsw_1.sg13cmos5l_inv_1$1_0.A vss vss sg13_lv_nmos ad=95f pd=0.88u as=0.17p ps=1.68u w=0.5u l=0.13u
+X37 vdd vss vdd vdd sg13_lv_pmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=1u
+X38 vip a_2906_4128# a_2150_6110# vss sg13_lv_nmos ad=1.02p pd=6.68u as=1.02p ps=6.68u w=3u l=0.13u
+X39 a_4144_942# vdd a_4042_942# vss sg13_lv_nmos ad=0.17p pd=1.68u as=95f ps=0.88u w=0.5u l=0.13u
+X40 w_3740_4936# a_878_4048# vdd vss sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.13u
+X41 vss single_bsw_0.sg13cmos5l_inv_1$1_0.A a_3000_5770# vss sg13_lv_nmos ad=1.02p pd=6.68u as=0.57p ps=3.38u w=3u l=0.13u
+X42 vip a_4144_5246# vcp vss sg13_lv_nmos ad=0.85p pd=5.68u as=0.85p ps=5.68u w=2.5u l=0.13u
+X43 vss vdd vss vss sg13_lv_nmos ad=0.1428p pd=1.52u as=0 ps=0 w=0.42u l=1u
+X44 vss vdd vss vss sg13_lv_nmos ad=0.1428p pd=1.52u as=0 ps=0 w=0.42u l=1u
+X45 vdd a_946_2908# a_878_3004# vss sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.13u
+X46 vss vdd vss vss sg13_lv_nmos ad=0.1428p pd=1.52u as=0 ps=0 w=0.42u l=1u
+X47 vdd vss vdd vdd sg13_lv_pmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=1u
+C0 a_946_2908# single_bsw_1.sg13cmos5l_inv_1$1_2.A 0
+C1 single_bsw_0.sg13cmos5l_inv_1$1_0.Y vip 0.17299f
+C2 a_946_2908# a_878_3004# 1.06205f
+C3 single_bsw_1.sg13cmos5l_inv_1$1_0.Y ck 0
+C4 vin a_878_3004# 0.16473f
+C5 single_bsw_0.sg13cmos5l_inv_1$1_0.Y a_2150_6110# 2.46592f
+C6 a_878_4048# a_878_3004# 0.01333f
+C7 a_2150_942# single_bsw_1.sg13cmos5l_inv_1$1_2.A 0
+C8 vin a_946_2908# 0.511f
+C9 a_878_4048# a_946_2908# 0
+C10 a_946_4012# a_878_3004# 0
+C11 a_3000_942# a_946_2908# 0
+C12 a_2150_942# a_878_3004# 1.20326f
+C13 vin a_3000_942# 0.00264f
+C14 a_946_4012# a_946_2908# 0.0102f
+C15 a_2150_942# a_946_2908# 0.06864f
+C16 a_4042_942# vdd 0.0417f
+C17 w_3740_4936# vdd 1.3807f
+C18 vin a_2150_942# 1.38216f
+C19 a_946_4012# a_878_4048# 1.06205f
+C20 ck a_878_3004# 0.01642f
+C21 a_2150_942# a_3000_942# 0.00289f
+C22 single_bsw_0.sg13cmos5l_inv_1$1_0.A a_878_4048# 0.13872p
+C23 vcp single_bsw_0.sg13cmos5l_inv_1$1_2.A 0.00156f
+C24 a_2906_4128# a_878_4048# 0
+C25 single_bsw_0.sg13cmos5l_inv_1$1_0.A a_946_4012# 0.05339f
+C26 ck a_946_2908# 0
+C27 a_2906_4128# a_946_4012# 0.00282f
+C28 single_bsw_0.sg13cmos5l_inv_1$1_0.A a_2906_4128# 0.12487f
+C29 vin ck 0.00372f
+C30 ck a_878_4048# 0.01641f
+C31 a_2906_942# single_bsw_1.sg13cmos5l_inv_1$1_2.Y 0.06823f
+C32 ck a_946_4012# 0
+C33 a_2150_942# ck 0
+C34 single_bsw_0.sg13cmos5l_inv_1$1_0.A ck 0.18589f
+C35 a_4144_5246# a_946_4012# 0
+C36 single_bsw_0.sg13cmos5l_inv_1$1_0.A a_4144_5246# 0.00151f
+C37 a_2906_4128# a_4144_5246# 0.32318f
+C38 vdd single_bsw_0.sg13cmos5l_inv_1$1_2.A 0.59476f
+C39 vdd single_bsw_1.sg13cmos5l_inv_1$1_0.Y 0.36438f
+C40 w_3740_1656# single_bsw_1.sg13cmos5l_inv_1$1_2.Y 0.35983f
+C41 a_3000_5770# a_946_4012# 0
+C42 single_bsw_0.sg13cmos5l_inv_1$1_0.A a_3000_5770# 0.04733f
+C43 single_bsw_1.sg13cmos5l_inv_1$1_2.Y single_bsw_1.sg13cmos5l_inv_1$1_0.A 0
+C44 w_3740_1656# a_2906_942# 0.92433f
+C45 a_2906_4128# a_3000_5770# 0.49093f
+C46 a_2906_4128# vcp 0.00637f
+C47 single_bsw_1.sg13cmos5l_inv_1$1_2.Y a_4144_942# 0.01582f
+C48 a_2906_942# single_bsw_1.sg13cmos5l_inv_1$1_0.A 0.12487f
+C49 vdd single_bsw_1.sg13cmos5l_inv_1$1_2.A 0.59476f
+C50 a_2906_942# a_4144_942# 0.32318f
+C51 vdd a_878_3004# 1.39453f
+C52 single_bsw_1.sg13cmos5l_inv_1$1_2.Y vcn 0.05606f
+C53 a_2150_6110# vip 1.38216f
+C54 vdd a_946_2908# 0.98197f
+C55 a_3000_5770# a_4144_5246# 0
+C56 a_2906_942# vcn 0.00637f
+C57 vcp a_4144_5246# 0.1115f
+C58 vin vdd 0.0382f
+C59 vdd a_878_4048# 1.39453f
+C60 vdd a_3000_942# 0.05439f
+C61 w_3740_1656# single_bsw_1.sg13cmos5l_inv_1$1_0.A 0.08148f
+C62 vdd a_946_4012# 0.98197f
+C63 vdd a_2150_942# 0.72488f
+C64 single_bsw_0.sg13cmos5l_inv_1$1_0.A vdd 0.88598f
+C65 a_2906_4128# vdd 1.3882f
+C66 w_3740_1656# a_4144_942# 0.37845f
+C67 w_3740_4936# single_bsw_0.sg13cmos5l_inv_1$1_0.Y 0.05232f
+C68 vip a_4042_6270# 0
+C69 a_4144_942# single_bsw_1.sg13cmos5l_inv_1$1_0.A 0.00151f
+C70 single_bsw_1.sg13cmos5l_inv_1$1_2.Y single_bsw_0.sg13cmos5l_inv_1$1_2.Y 0.00364f
+C71 w_3740_1656# vcn 0.03003f
+C72 vdd ck 1.66356f
+C73 a_2150_6110# a_4042_6270# 0
+C74 vdd a_4144_5246# 0.08037f
+C75 a_4144_942# vcn 0.1115f
+C76 vip single_bsw_0.sg13cmos5l_inv_1$1_2.Y 0
+C77 vdd a_3000_5770# 0.05439f
+C78 vdd vcp 0.04319f
+C79 a_2150_6110# single_bsw_0.sg13cmos5l_inv_1$1_2.Y 0
+C80 a_4042_942# single_bsw_1.sg13cmos5l_inv_1$1_2.Y 0
+C81 a_4042_6270# single_bsw_0.sg13cmos5l_inv_1$1_2.Y 0
+C82 a_4042_942# a_2906_942# 0
+C83 single_bsw_0.sg13cmos5l_inv_1$1_0.Y a_878_4048# 0.70386f
+C84 w_3740_4936# vip 0.15493f
+C85 single_bsw_0.sg13cmos5l_inv_1$1_0.Y a_946_4012# 0.13868p
+C86 single_bsw_0.sg13cmos5l_inv_1$1_0.A single_bsw_0.sg13cmos5l_inv_1$1_0.Y 0.45303f
+C87 w_3740_1656# w_3740_4936# 0.00447f
+C88 w_3740_4936# a_2150_6110# 0.92863p
+C89 a_4042_942# single_bsw_1.sg13cmos5l_inv_1$1_0.A 0.03817f
+C90 single_bsw_0.sg13cmos5l_inv_1$1_0.Y ck 0
+C91 a_4042_942# a_4144_942# 0.09847f
+C92 single_bsw_1.sg13cmos5l_inv_1$1_2.Y single_bsw_1.sg13cmos5l_inv_1$1_2.A 0.08607f
+C93 a_2906_942# single_bsw_1.sg13cmos5l_inv_1$1_2.A 0.05132f
+C94 a_2906_942# a_878_3004# 0
+C95 w_3740_1656# single_bsw_1.sg13cmos5l_inv_1$1_0.Y 0.05232f
+C96 a_2150_6110# single_bsw_0.sg13cmos5l_inv_1$1_2.A 0
+C97 vin single_bsw_1.sg13cmos5l_inv_1$1_2.Y 0
+C98 a_2906_942# a_946_2908# 0.00282f
+C99 single_bsw_1.sg13cmos5l_inv_1$1_0.A single_bsw_1.sg13cmos5l_inv_1$1_0.Y 0.45303f
+C100 vin a_2906_942# 0.04258f
+C101 w_3740_4936# single_bsw_0.sg13cmos5l_inv_1$1_2.Y 0.35983f
+C102 a_2906_942# a_3000_942# 0.49093f
+C103 single_bsw_1.sg13cmos5l_inv_1$1_2.Y a_2150_942# 0
+C104 w_3740_1656# single_bsw_1.sg13cmos5l_inv_1$1_2.A 0
+C105 a_2906_942# a_2150_942# 0.74465f
+C106 a_2906_4128# a_2906_942# 0.00368f
+C107 single_bsw_1.sg13cmos5l_inv_1$1_0.A single_bsw_1.sg13cmos5l_inv_1$1_2.A 0
+C108 w_3740_1656# a_878_3004# 1.25875f
+C109 single_bsw_0.sg13cmos5l_inv_1$1_0.Y vdd 0.36438f
+C110 vip a_878_4048# 0.16473f
+C111 single_bsw_1.sg13cmos5l_inv_1$1_0.A a_878_3004# 0.13872p
+C112 w_3740_1656# a_946_2908# 0.59814f
+C113 vip a_946_4012# 0.511f
+C114 w_3740_1656# vin 0.15493f
+C115 single_bsw_0.sg13cmos5l_inv_1$1_0.A vip 0.45661f
+C116 single_bsw_1.sg13cmos5l_inv_1$1_0.A a_946_2908# 0.05339f
+C117 a_2906_4128# vip 0.04258f
+C118 a_2150_6110# a_878_4048# 1.20326f
+C119 vcn single_bsw_1.sg13cmos5l_inv_1$1_2.A 0.00156f
+C120 vin single_bsw_1.sg13cmos5l_inv_1$1_0.A 0.45661f
+C121 a_4144_942# a_946_2908# 0
+C122 single_bsw_1.sg13cmos5l_inv_1$1_0.A a_3000_942# 0.04733f
+C123 w_3740_1656# a_2150_942# 0.92863p
+C124 a_2150_6110# a_946_4012# 0.06864f
+C125 single_bsw_0.sg13cmos5l_inv_1$1_0.A a_2150_6110# 0.33933f
+C126 a_2150_6110# a_2906_4128# 0.74465f
+C127 vin a_4144_942# 0.11075f
+C128 ck vip 0.00371f
+C129 single_bsw_1.sg13cmos5l_inv_1$1_0.A a_2150_942# 0.33933f
+C130 a_4144_942# a_3000_942# 0
+C131 single_bsw_0.sg13cmos5l_inv_1$1_2.Y single_bsw_0.sg13cmos5l_inv_1$1_2.A 0.08607f
+C132 a_4144_942# a_2150_942# 0.04988f
+C133 vin vcn 1.49377f
+C134 w_3740_1656# ck 0
+C135 vip a_4144_5246# 0.11075f
+C136 a_2150_6110# ck 0
+C137 single_bsw_1.sg13cmos5l_inv_1$1_0.A ck 0.18578f
+C138 a_2150_942# vcn 0.00247f
+C139 a_4042_6270# a_946_4012# 0
+C140 single_bsw_0.sg13cmos5l_inv_1$1_0.A a_4042_6270# 0.03817f
+C141 a_2906_4128# a_4042_6270# 0
+C142 a_2150_6110# a_4144_5246# 0.04988f
+C143 vip a_3000_5770# 0.00264f
+C144 vip vcp 1.49377f
+C145 a_2150_6110# a_3000_5770# 0.00289f
+C146 a_2150_6110# vcp 0.00247f
+C147 vdd single_bsw_1.sg13cmos5l_inv_1$1_2.Y 0.49046f
+C148 a_4042_6270# a_4144_5246# 0.09847f
+C149 vdd a_2906_942# 1.3882f
+C150 single_bsw_0.sg13cmos5l_inv_1$1_0.A single_bsw_0.sg13cmos5l_inv_1$1_2.Y 0
+C151 a_2906_4128# single_bsw_0.sg13cmos5l_inv_1$1_2.Y 0.06823f
+C152 vcp vcn 0.04354f
+C153 w_3740_4936# single_bsw_0.sg13cmos5l_inv_1$1_2.A 0
+C154 vdd vip 0.03819f
+C155 w_3740_1656# vdd 1.3807f
+C156 a_2150_6110# vdd 0.72488f
+C157 a_4144_5246# single_bsw_0.sg13cmos5l_inv_1$1_2.Y 0.01653f
+C158 vdd single_bsw_1.sg13cmos5l_inv_1$1_0.A 0.88608f
+C159 vdd a_4144_942# 0.08038f
+C160 vcp single_bsw_0.sg13cmos5l_inv_1$1_2.Y 0.05606f
+C161 a_4042_942# a_946_2908# 0
+C162 vin a_4042_942# 0
+C163 vdd vcn 0.04319f
+C164 vdd a_4042_6270# 0.0417f
+C165 w_3740_4936# a_878_4048# 1.25875f
+C166 a_4042_942# a_2150_942# 0
+C167 w_3740_4936# a_946_4012# 0.59814f
+C168 single_bsw_0.sg13cmos5l_inv_1$1_0.A w_3740_4936# 0.08148f
+C169 w_3740_4936# a_2906_4128# 0.92433f
+C170 single_bsw_0.sg13cmos5l_inv_1$1_2.A single_bsw_1.sg13cmos5l_inv_1$1_2.A 0.00778f
+C171 vdd single_bsw_0.sg13cmos5l_inv_1$1_2.Y 0.49046f
+C172 single_bsw_1.sg13cmos5l_inv_1$1_0.Y a_878_3004# 0.70386f
+C173 w_3740_4936# a_4144_5246# 0.37829f
+C174 single_bsw_1.sg13cmos5l_inv_1$1_0.Y a_946_2908# 0.13868p
+C175 vin single_bsw_1.sg13cmos5l_inv_1$1_0.Y 0.17299f
+C176 single_bsw_0.sg13cmos5l_inv_1$1_2.A a_878_4048# 0.00339f
+C177 w_3740_4936# vcp 0.03003f
+C178 a_878_3004# single_bsw_1.sg13cmos5l_inv_1$1_2.A 0.00341f
+C179 single_bsw_0.sg13cmos5l_inv_1$1_2.A a_946_4012# 0
+C180 single_bsw_0.sg13cmos5l_inv_1$1_0.A single_bsw_0.sg13cmos5l_inv_1$1_2.A 0
+C181 single_bsw_1.sg13cmos5l_inv_1$1_0.Y a_2150_942# 2.46592f
+C182 a_2906_4128# single_bsw_0.sg13cmos5l_inv_1$1_2.A 0.05132f
+C183 vin vss 3.38792f
+C184 vcn vss 0.79814f
+C185 vcp vss 0.79814f
+C186 vip vss 3.38794f
+C187 ck vss 2.27632f
+C188 vdd vss 12.267f
+C189 a_4042_942# vss 0.10295f
+C190 a_3000_942# vss 0.40715f
+C191 a_2150_942# vss 17.5338f
+C192 single_bsw_1.sg13cmos5l_inv_1$1_0.Y vss 3.42725f
+C193 single_bsw_1.sg13cmos5l_inv_1$1_0.A vss 6.27488f
+C194 a_4144_942# vss 0.65433f
+C195 single_bsw_1.sg13cmos5l_inv_1$1_2.Y vss 0.5767f
+C196 a_2906_942# vss 1.14115f
+C197 single_bsw_1.sg13cmos5l_inv_1$1_2.A vss 0.24751f
+C198 a_878_3004# vss 3.8859f
+C199 a_946_2908# vss 4.90526f
+C200 a_878_4048# vss 3.8859f
+C201 a_946_4012# vss 4.90526f
+C202 single_bsw_0.sg13cmos5l_inv_1$1_2.A vss 0.24752f
+C203 single_bsw_0.sg13cmos5l_inv_1$1_2.Y vss 0.5767f
+C204 a_4144_5246# vss 0.65402f
+C205 a_4042_6270# vss 0.10295f
+C206 a_3000_5770# vss 0.40715f
+C207 a_2906_4128# vss 1.14115f
+C208 a_2150_6110# vss 17.5338f
+C209 single_bsw_0.sg13cmos5l_inv_1$1_0.Y vss 3.42725f
+C210 single_bsw_0.sg13cmos5l_inv_1$1_0.A vss 6.27498f
+C211 w_3740_1656# vss 19.291f
+C212 w_3740_4936# vss 19.291f
+.ends
+

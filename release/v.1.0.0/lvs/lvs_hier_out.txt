@@ -1,0 +1,36 @@
+Flattening unmatched subcell adc8b in circuit MSPHY9932_hier (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_IOPadAnalog in circuit MSPHY9932_hier (1)(9 instances)
+Flattening unmatched subcell sg13cmos5l_IOPadVdd in circuit MSPHY9932_hier (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_IOPadVss in circuit MSPHY9932_hier (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_Corner in circuit MSPHY9932_hier (1)(4 instances)
+
+Cell MSPHY9932_hier (1) disconnected node: vdd
+Cell MSPHY9932_hier (1) disconnected node: cks
+Cell MSPHY9932_hier (1) disconnected node: vip
+Cell MSPHY9932_hier (1) disconnected node: vin
+Cell MSPHY9932_hier (1) disconnected node: vddr
+Cell MSPHY9932_hier (1) disconnected node: data[0]
+Cell MSPHY9932_hier (1) disconnected node: data[1]
+Cell MSPHY9932_hier (1) disconnected node: data[2]
+Cell MSPHY9932_hier (1) disconnected node: cko
+Cell MSPHY9932_hier (1) disconnected node: frame
+Class MSPHY9932_flat (0):  Merged 2238 parallel devices.
+
+Subcircuit pins:
+Circuit 1: MSPHY9932_flat                  |Circuit 2: MSPHY9932_hier                  
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+cks                                        |cks                                        
+vip                                        |vip                                        
+vin                                        |vin                                        
+vddr                                       |vddr                                       
+data[0]                                    |data[0]                                    
+data[1]                                    |data[1]                                    
+data[2]                                    |data[2]                                    
+cko                                        |cko                                        
+frame                                      |frame                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes MSPHY9932_flat and MSPHY9932_hier are equivalent.
+
+Final result: Verify:  cell v.1.0.0/lvs/MSPHY9932_hier_ref.spice has no elements and/or nodes.  Not checked.

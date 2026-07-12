@@ -1,0 +1,53 @@
+* NGSPICE file created from diff_bsw_flat.ext - technology: ihp-sg13cmos5l
+
+.subckt diff_bsw_flat vip vcp vin vcn vdd ck vss
+X0 vdd a_946_4012# a_878_4048# vss sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.13u
+X1 vin a_2906_942# a_2150_942# vss sg13_lv_nmos ad=1.02p pd=6.68u as=1.02p ps=6.68u w=3u l=0.13u
+X2 a_4042_6270# single_bsw_0.sg13cmos5l_inv_1$1_0.A vss vss sg13_lv_nmos ad=95f pd=0.88u as=0.17p ps=1.68u w=0.5u l=0.13u
+X3 single_bsw_1.sg13cmos5l_inv_1$1_2.Y single_bsw_1.sg13cmos5l_inv_1$1_2.A vss vss sg13_lv_nmos ad=0.2516p pd=2.16u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X4 vss vdd vss vss sg13_lv_nmos ad=0.1428p pd=1.52u as=81.33254p ps=0.54442m w=0.42u l=1u
+X5 vdd vss vdd vdd sg13_lv_pmos ad=0.34p pd=2.68u as=31.4284p ps=0.1861m w=1u l=1u
+X6 a_2150_6110# single_bsw_0.sg13cmos5l_inv_1$1_0.A vss vss sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.4u
+X7 vdd vss vdd vdd sg13_lv_pmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=1u
+X8 vss vdd vss vss sg13_lv_nmos ad=0.1428p pd=1.52u as=0 ps=0 w=0.42u l=1u
+X9 a_946_2908# a_878_3004# vdd vss sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.13u
+X10 single_bsw_1.sg13cmos5l_inv_1$1_2.Y single_bsw_1.sg13cmos5l_inv_1$1_2.A vdd vdd sg13_lv_pmos ad=0.3808p pd=2.92u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X11 single_bsw_0.sg13cmos5l_inv_1$1_2.Y single_bsw_0.sg13cmos5l_inv_1$1_2.A vss vss sg13_lv_nmos ad=0.2516p pd=2.16u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X12 vss vdd vss vss sg13_lv_nmos ad=0.1428p pd=1.52u as=0 ps=0 w=0.42u l=1u
+X13 a_3000_5770# vdd a_2906_4128# vss sg13_lv_nmos ad=0.57p pd=3.38u as=1.02p ps=6.68u w=3u l=0.13u
+X14 a_946_4012# a_878_4048# vdd vss sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.13u
+X15 vin a_4144_942# vcn vss sg13_lv_nmos ad=0.85p pd=5.68u as=0.85p ps=5.68u w=2.5u l=0.13u
+X16 single_bsw_1.sg13cmos5l_inv_1$1_0.A ck vdd vdd sg13_lv_pmos ad=0.3808p pd=2.92u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X17 a_4144_5246# vdd a_4042_6270# vss sg13_lv_nmos ad=0.17p pd=1.68u as=95f ps=0.88u w=0.5u l=0.13u
+X18 single_bsw_0.sg13cmos5l_inv_1$1_2.Y single_bsw_0.sg13cmos5l_inv_1$1_2.A vdd vdd sg13_lv_pmos ad=0.3808p pd=2.92u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X19 a_4144_5246# single_bsw_0.sg13cmos5l_inv_1$1_2.Y w_3740_4936# w_3740_4936# sg13_lv_pmos ad=0.17p pd=1.68u as=0.17p ps=1.68u w=0.5u l=0.13u
+X20 single_bsw_1.sg13cmos5l_inv_1$1_0.Y single_bsw_1.sg13cmos5l_inv_1$1_0.A vdd vdd sg13_lv_pmos ad=0.3808p pd=2.92u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X21 vdd vss vdd vdd sg13_lv_pmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=1u
+X22 vdd single_bsw_0.sg13cmos5l_inv_1$1_2.A a_2906_4128# vdd sg13_lv_pmos ad=0.17p pd=1.68u as=0.17p ps=1.68u w=0.5u l=0.13u
+X23 vss single_bsw_1.sg13cmos5l_inv_1$1_0.A a_3000_942# vss sg13_lv_nmos ad=1.02p pd=6.68u as=0.57p ps=3.38u w=3u l=0.13u
+X24 single_bsw_1.sg13cmos5l_inv_1$1_0.A ck vss vss sg13_lv_nmos ad=0.2516p pd=2.16u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X25 single_bsw_1.sg13cmos5l_inv_1$1_0.Y single_bsw_1.sg13cmos5l_inv_1$1_0.A vss vss sg13_lv_nmos ad=0.2516p pd=2.16u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X26 single_bsw_0.sg13cmos5l_inv_1$1_0.A ck vdd vdd sg13_lv_pmos ad=0.3808p pd=2.92u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X27 vdd single_bsw_1.sg13cmos5l_inv_1$1_2.A a_2906_942# vdd sg13_lv_pmos ad=0.17p pd=1.68u as=0.17p ps=1.68u w=0.5u l=0.13u
+X28 a_2150_942# single_bsw_1.sg13cmos5l_inv_1$1_0.A vss vss sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.4u
+X29 single_bsw_0.sg13cmos5l_inv_1$1_0.A ck vss vss sg13_lv_nmos ad=0.2516p pd=2.16u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X30 a_3000_942# vdd a_2906_942# vss sg13_lv_nmos ad=0.57p pd=3.38u as=1.02p ps=6.68u w=3u l=0.13u
+X31 single_bsw_0.sg13cmos5l_inv_1$1_0.Y single_bsw_0.sg13cmos5l_inv_1$1_0.A vdd vdd sg13_lv_pmos ad=0.3808p pd=2.92u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X32 vdd vss vdd vdd sg13_lv_pmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=1u
+X33 a_4144_942# single_bsw_1.sg13cmos5l_inv_1$1_2.Y w_3740_1656# w_3740_1656# sg13_lv_pmos ad=0.17p pd=1.68u as=0.17p ps=1.68u w=0.5u l=0.13u
+X34 single_bsw_0.sg13cmos5l_inv_1$1_0.Y single_bsw_0.sg13cmos5l_inv_1$1_0.A vss vss sg13_lv_nmos ad=0.2516p pd=2.16u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X35 w_3740_1656# a_878_3004# vdd vss sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.13u
+X36 a_4042_942# single_bsw_1.sg13cmos5l_inv_1$1_0.A vss vss sg13_lv_nmos ad=95f pd=0.88u as=0.17p ps=1.68u w=0.5u l=0.13u
+X37 vdd vss vdd vdd sg13_lv_pmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=1u
+X38 vip a_2906_4128# a_2150_6110# vss sg13_lv_nmos ad=1.02p pd=6.68u as=1.02p ps=6.68u w=3u l=0.13u
+X39 a_4144_942# vdd a_4042_942# vss sg13_lv_nmos ad=0.17p pd=1.68u as=95f ps=0.88u w=0.5u l=0.13u
+X40 w_3740_4936# a_878_4048# vdd vss sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.13u
+X41 vss single_bsw_0.sg13cmos5l_inv_1$1_0.A a_3000_5770# vss sg13_lv_nmos ad=1.02p pd=6.68u as=0.57p ps=3.38u w=3u l=0.13u
+X42 vip a_4144_5246# vcp vss sg13_lv_nmos ad=0.85p pd=5.68u as=0.85p ps=5.68u w=2.5u l=0.13u
+X43 vss vdd vss vss sg13_lv_nmos ad=0.1428p pd=1.52u as=0 ps=0 w=0.42u l=1u
+X44 vss vdd vss vss sg13_lv_nmos ad=0.1428p pd=1.52u as=0 ps=0 w=0.42u l=1u
+X45 vdd a_946_2908# a_878_3004# vss sg13_lv_nmos ad=0.442p pd=3.28u as=0.442p ps=3.28u w=1.3u l=0.13u
+X46 vss vdd vss vss sg13_lv_nmos ad=0.1428p pd=1.52u as=0 ps=0 w=0.42u l=1u
+X47 vdd vss vdd vdd sg13_lv_pmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=1u
+.ends
+

@@ -1,0 +1,16 @@
+11-Jul-2026 19:03:42 | INFO    | Your Klayout version is: KLayout 0.30.9
+11-Jul-2026 19:03:42 | INFO    | Running SG13CMOS5L LVS checks on design /foss/designs/adc8b/IHP__MSPHY9932/release/v.1.0.0/gds/MSPHY9932.gds on cell MSPHY9932
+11-Jul-2026 19:07:10 | INFO    | ==============================================================================
+11-Jul-2026 19:07:10 | INFO    | Important Summary
+11-Jul-2026 19:07:10 | INFO    | +------------------+--------------------------------------------------------------------+
+11-Jul-2026 19:07:10 | INFO    | | Status           | NET_ONLY                                                           |
+11-Jul-2026 19:07:10 | INFO    | | Mode             | NET_ONLY                                                           |
+11-Jul-2026 19:07:10 | INFO    | | Outcome          | NET_ONLY mode: extracted netlist generated from layout only.       |
+11-Jul-2026 19:07:10 | INFO    | | Layout           | MSPHY9932.gds                                                      |
+11-Jul-2026 19:07:10 | INFO    | | Top Cell         | MSPHY9932                                                          |
+11-Jul-2026 19:07:10 | INFO    | | Results Dir      | /foss/designs/adc8b/IHP__MSPHY9932/release/v.1.0.0/lvs/klayout_net |
+11-Jul-2026 19:07:10 | INFO    | | Warnings         | 0                                                                  |
+11-Jul-2026 19:07:10 | INFO    | | Errors           | 0                                                                  |
+11-Jul-2026 19:07:10 | INFO    | | Run Time (s)     | 207.959                                                            |
+11-Jul-2026 19:07:10 | INFO    | +------------------+--------------------------------------------------------------------+
+11-Jul-2026 19:07:10 | INFO    | ==============================================================================

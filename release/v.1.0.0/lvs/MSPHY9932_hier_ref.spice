@@ -1,0 +1,46 @@
+* MSPHY9932 Hierarchical LVS Reference
+
+* IO pad black boxes (port order matches PDK)
+.subckt sg13cmos5l_IOPadAnalog vss vdd iovss iovdd pad padres
+.ends
+.subckt sg13cmos5l_IOPadVdd vss vdd iovss iovdd
+.ends
+.subckt sg13cmos5l_IOPadVss vss vdd iovss iovdd
+.ends
+.subckt sg13cmos5l_Corner vss vdd iovss iovdd
+.ends
+.subckt sg13cmos5l_IOPadIOVss vss vdd iovss iovdd
+.ends
+.subckt sg13cmos5l_IOPadIOVdd vss vdd iovss iovdd
+.ends
+.subckt sealring
+.ends
+
+* adc8b core black box
+.subckt adc8b vdd vddr vss vip vin cks data[0] data[1] data[2] cko frame
+.ends
+
+* Top level - matches schematic
+.subckt MSPHY9932_hier vdd cks vip vin vddr data[0] data[1] data[2] cko frame
+
+* adc8b core
+x_adc vdd vddr vss vip vin cks data[0] data[1] data[2] cko frame adc8b
+
+* IO pads
+x_vip vss vdd iovss iovdd vip vip sg13cmos5l_IOPadAnalog
+x_vin vss vdd iovss iovdd vin vin sg13cmos5l_IOPadAnalog
+x_cks vss vdd iovss iovdd cks cks sg13cmos5l_IOPadAnalog
+x_d0  vss vdd iovss iovdd data[0] data[0] sg13cmos5l_IOPadAnalog
+x_d1  vss vdd iovss iovdd data[1] data[1] sg13cmos5l_IOPadAnalog
+x_d2  vss vdd iovss iovdd data[2] data[2] sg13cmos5l_IOPadAnalog
+x_cko vss vdd iovss iovdd cko cko sg13cmos5l_IOPadAnalog
+x_frm vss vdd iovss iovdd frame frame sg13cmos5l_IOPadAnalog
+x_vddr vss vdd iovss iovdd vddr vddr sg13cmos5l_IOPadAnalog
+x_pvdd vss vdd iovss iovdd sg13cmos5l_IOPadVdd
+x_pvss vss vdd iovss iovdd sg13cmos5l_IOPadVss
+x_corner0 vss vdd iovss iovdd sg13cmos5l_Corner
+x_corner1 vss vdd iovss iovdd sg13cmos5l_Corner
+x_corner2 vss vdd iovss iovdd sg13cmos5l_Corner
+x_corner3 vss vdd iovss iovdd sg13cmos5l_Corner
+
+.ends

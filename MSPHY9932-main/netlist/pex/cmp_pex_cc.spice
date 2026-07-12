@@ -1,0 +1,146 @@
+* NGSPICE file created from cmp_flat.ext - technology: ihp-sg13cmos5l
+
+.subckt cmp_flat vdd vss rdy vin vip outn outp clk
+X0 outp clk vdd vdd sg13_lv_pmos ad=0.17p pd=1.68u as=95f ps=0.88u w=0.5u l=0.13u
+X1 vss a_581042_926846# a_581154_926910# vss sg13_lv_nmos ad=0.1426p pd=1.16u as=0.1428p ps=1.52u w=0.42u l=0.5u
+X2 sg13cmos5l_or2_1$1_0.X a_579900_927220# vss vss sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1469p ps=1.155u w=0.74u l=0.13u
+X3 vss vdd vss vss sg13_lv_nmos ad=0.1428p pd=1.52u as=41.9265p ps=0.27795m w=0.42u l=1u
+X4 vdd clk a_574318_928566# vdd sg13_lv_pmos ad=95f pd=0.88u as=0.17p ps=1.68u w=0.5u l=0.13u
+X5 a_574934_925864# clk vss vss sg13_lv_nmos ad=0.17p pd=1.68u as=95f ps=0.88u w=0.5u l=0.13u
+X6 a_574934_925864# clk vss vss sg13_lv_nmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.13u
+X7 rdy a_581154_926910# vdd vdd sg13_lv_pmos ad=0.4256p pd=3u as=0.2254p ps=1.53u w=1.12u l=0.13u
+X8 sg13cmos5l_inv_1$1_1.Y outn vss vss sg13_lv_nmos ad=0.2516p pd=2.16u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X9 a_577144_925864# vip a_574934_925864# vss sg13_lv_nmos ad=1.7p pd=10.68u as=0.95p ps=5.38u w=5u l=0.13u
+X10 vss sg13cmos5l_inv_1$1_0.Y a_579900_927220# vss sg13_lv_nmos ad=0.1469p pd=1.155u as=0.1045p ps=0.93u w=0.55u l=0.13u
+X11 outn clk vdd vdd sg13_lv_pmos ad=0.17p pd=1.68u as=95f ps=0.88u w=0.5u l=0.13u
+X12 outn outp vdd vdd sg13_lv_pmos ad=0.425p pd=3.18u as=0.2375p ps=1.63u w=1.25u l=0.13u
+X13 sg13cmos5l_inv_1$1_1.Y outn vdd vdd sg13_lv_pmos ad=0.3808p pd=2.92u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X14 a_577144_925864# outp outn vss sg13_lv_nmos ad=1.7p pd=10.68u as=0.95p ps=5.38u w=5u l=0.13u
+X15 outp outn a_574318_928566# vss sg13_lv_nmos ad=0.95p pd=5.38u as=1.7p ps=10.68u w=5u l=0.13u
+X16 a_579900_927220# sg13cmos5l_inv_1$1_1.Y vss vss sg13_lv_nmos ad=0.1045p pd=0.93u as=0.187p ps=1.78u w=0.55u l=0.13u
+X17 vss sg13cmos5l_or2_1$1_0.X a_580772_926846# vss sg13_lv_nmos ad=79.8f pd=0.8u as=0.1428p ps=1.52u w=0.42u l=0.13u
+X18 vdd outn outp vdd sg13_lv_pmos ad=0.2375p pd=1.63u as=0.425p ps=3.18u w=1.25u l=0.13u
+X19 vdd clk outp vdd sg13_lv_pmos ad=95f pd=0.88u as=0.17p ps=1.68u w=0.5u l=0.13u
+X20 vdd a_581042_926846# a_581154_926910# vdd sg13_lv_pmos ad=0.2254p pd=1.53u as=0.34p ps=2.68u w=1u l=0.5u
+X21 vdd vss vdd vdd sg13_lv_pmos ad=0.34p pd=2.68u as=42.0809p ps=0.28309m w=1u l=1u
+X22 vdd sg13cmos5l_or2_1$1_0.X a_580772_926846# vdd sg13_lv_pmos ad=0.1523p pd=1.38u as=0.1428p ps=1.52u w=0.42u l=0.13u
+X23 sg13cmos5l_inv_1$1_0.Y outp vss vss sg13_lv_nmos ad=0.2516p pd=2.16u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X24 rdy a_581154_926910# vss vss sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1426p ps=1.16u w=0.74u l=0.13u
+X25 a_574318_928566# clk vdd vdd sg13_lv_pmos ad=0.17p pd=1.68u as=95f ps=0.88u w=0.5u l=0.13u
+X26 outp outn vdd vdd sg13_lv_pmos ad=0.425p pd=3.18u as=0.2375p ps=1.63u w=1.25u l=0.13u
+X27 vss clk a_574934_925864# vss sg13_lv_nmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.13u
+X28 vss clk a_574934_925864# vss sg13_lv_nmos ad=95f pd=0.88u as=0.17p ps=1.68u w=0.5u l=0.13u
+X29 sg13cmos5l_inv_1$1_0.Y outp vdd vdd sg13_lv_pmos ad=0.3808p pd=2.92u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X30 vdd sg13cmos5l_inv_1$1_0.Y a_579994_927220# vdd sg13_lv_pmos ad=0.2226p pd=1.535u as=0.1596p ps=1.22u w=0.84u l=0.13u
+X31 a_574934_925864# vin a_574318_928566# vss sg13_lv_nmos ad=0.95p pd=5.38u as=1.7p ps=10.68u w=5u l=0.13u
+X32 vss vdd vss vss sg13_lv_nmos ad=0.1428p pd=1.52u as=0 ps=0 w=0.42u l=1u
+X33 a_577144_925864# clk vdd vdd sg13_lv_pmos ad=0.17p pd=1.68u as=95f ps=0.88u w=0.5u l=0.13u
+X34 a_574934_925864# vip a_577144_925864# vss sg13_lv_nmos ad=0.95p pd=5.38u as=1.7p ps=10.68u w=5u l=0.13u
+X35 a_581042_926846# a_580772_926846# vdd vdd sg13_lv_pmos ad=0.34p pd=2.68u as=0.1523p ps=1.38u w=1u l=0.5u
+X36 vdd clk outn vdd sg13_lv_pmos ad=95f pd=0.88u as=0.17p ps=1.68u w=0.5u l=0.13u
+X37 vdd outp outn vdd sg13_lv_pmos ad=0.2375p pd=1.63u as=0.425p ps=3.18u w=1.25u l=0.13u
+X38 outn outp a_577144_925864# vss sg13_lv_nmos ad=0.95p pd=5.38u as=1.7p ps=10.68u w=5u l=0.13u
+X39 a_579994_927220# sg13cmos5l_inv_1$1_1.Y a_579900_927220# vdd sg13_lv_pmos ad=0.1596p pd=1.22u as=0.2856p ps=2.36u w=0.84u l=0.13u
+X40 a_574318_928566# outn outp vss sg13_lv_nmos ad=1.7p pd=10.68u as=0.95p ps=5.38u w=5u l=0.13u
+X41 a_581042_926846# a_580772_926846# vss vss sg13_lv_nmos ad=0.1428p pd=1.52u as=79.8f ps=0.8u w=0.42u l=0.5u
+X42 vdd clk a_577144_925864# vdd sg13_lv_pmos ad=95f pd=0.88u as=0.17p ps=1.68u w=0.5u l=0.13u
+X43 vdd vss vdd vdd sg13_lv_pmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=1u
+X44 sg13cmos5l_or2_1$1_0.X a_579900_927220# vdd vdd sg13_lv_pmos ad=0.3976p pd=2.95u as=0.2226p ps=1.535u w=1.12u l=0.13u
+X45 a_574318_928566# vin a_574934_925864# vss sg13_lv_nmos ad=1.7p pd=10.68u as=0.95p ps=5.38u w=5u l=0.13u
+C0 a_577144_925864# a_574318_928566# 0
+C1 outp vin 0.12253f
+C2 clk vip 0.00382f
+C3 outn a_581154_926910# 0
+C4 outn a_574934_925864# 0.12938f
+C5 sg13cmos5l_or2_1$1_0.X a_581042_926846# 0.00927f
+C6 sg13cmos5l_inv_1$1_0.Y vip 0
+C7 a_577144_925864# vip 0.2694f
+C8 rdy a_581042_926846# 0.01085f
+C9 outp vdd 2.09971f
+C10 a_580772_926846# vdd 0.3911f
+C11 sg13cmos5l_inv_1$1_1.Y a_580772_926846# 0
+C12 a_574318_928566# outn 0.21937f
+C13 a_579900_927220# vdd 0.22172f
+C14 sg13cmos5l_inv_1$1_1.Y a_579900_927220# 0.32304f
+C15 a_574318_928566# a_574934_925864# 1.38792f
+C16 vin vdd 0
+C17 outn vip 0.13593f
+C18 outn a_581042_926846# 0
+C19 a_581042_926846# a_581154_926910# 0.67711f
+C20 vip a_574934_925864# 0.15257f
+C21 clk outp 1.1516f
+C22 outp sg13cmos5l_or2_1$1_0.X 0
+C23 sg13cmos5l_inv_1$1_1.Y vdd 0.44329f
+C24 outn a_579994_927220# 0
+C25 sg13cmos5l_or2_1$1_0.X a_580772_926846# 0.52495f
+C26 sg13cmos5l_inv_1$1_0.Y outp 0.0848f
+C27 rdy a_580772_926846# 0
+C28 sg13cmos5l_inv_1$1_0.Y a_580772_926846# 0
+C29 a_579900_927220# sg13cmos5l_or2_1$1_0.X 0.1684f
+C30 a_577144_925864# outp 0.92444f
+C31 clk vin 0.00385f
+C32 sg13cmos5l_inv_1$1_0.Y a_579900_927220# 0.27837f
+C33 a_577144_925864# a_579900_927220# 0
+C34 clk vdd 2.00767f
+C35 sg13cmos5l_or2_1$1_0.X vdd 0.60729f
+C36 sg13cmos5l_inv_1$1_1.Y sg13cmos5l_or2_1$1_0.X 0.01397f
+C37 outp outn 3.07726f
+C38 outn a_580772_926846# 0
+C39 a_580772_926846# a_581154_926910# 0.00874f
+C40 rdy vdd 0.17651f
+C41 sg13cmos5l_inv_1$1_1.Y rdy 0
+C42 sg13cmos5l_inv_1$1_0.Y vdd 0.38976f
+C43 sg13cmos5l_inv_1$1_1.Y sg13cmos5l_inv_1$1_0.Y 0.35413f
+C44 outp a_574934_925864# 0.16062f
+C45 a_577144_925864# vdd 0.46435f
+C46 a_577144_925864# sg13cmos5l_inv_1$1_1.Y 0
+C47 a_579900_927220# outn 0.00422f
+C48 outn vin 0.00949f
+C49 a_574318_928566# outp 1.86797f
+C50 vin a_574934_925864# 0.15257f
+C51 outn vdd 2.18826f
+C52 sg13cmos5l_inv_1$1_1.Y outn 0.18312f
+C53 a_581154_926910# vdd 0.20993f
+C54 sg13cmos5l_inv_1$1_1.Y a_581154_926910# 0
+C55 a_574318_928566# vin 0.2721f
+C56 outp vip 0.03318f
+C57 rdy sg13cmos5l_or2_1$1_0.X 0.00649f
+C58 sg13cmos5l_inv_1$1_0.Y sg13cmos5l_or2_1$1_0.X 0.04344f
+C59 a_577144_925864# clk 0.20496f
+C60 a_580772_926846# a_581042_926846# 0.33585f
+C61 a_577144_925864# sg13cmos5l_inv_1$1_0.Y 0.0029f
+C62 a_574318_928566# vdd 0.44022f
+C63 a_579900_927220# a_579994_927220# 0.00721f
+C64 clk outn 1.24279f
+C65 outn sg13cmos5l_or2_1$1_0.X 0.00214f
+C66 sg13cmos5l_or2_1$1_0.X a_581154_926910# 0.0029f
+C67 vip vdd 0.00158f
+C68 clk a_574934_925864# 0.25574f
+C69 rdy a_581154_926910# 0.19651f
+C70 sg13cmos5l_inv_1$1_0.Y outn 0.12708f
+C71 a_577144_925864# outn 1.8153f
+C72 a_581042_926846# vdd 0.23839f
+C73 sg13cmos5l_inv_1$1_1.Y a_581042_926846# 0
+C74 a_574318_928566# clk 0.25249f
+C75 a_579994_927220# vdd 0.01273f
+C76 a_577144_925864# a_574934_925864# 1.38792f
+C77 sg13cmos5l_inv_1$1_1.Y a_579994_927220# 0.01413f
+C78 rdy vss 0.232f
+C79 vip vss 0.8291f
+C80 vin vss 0.84068f
+C81 outn vss 2.29827f
+C82 outp vss 2.54845f
+C83 clk vss 1.69626f
+C84 vdd vss 4.23771f
+C85 a_581154_926910# vss 0.23185f
+C86 a_581042_926846# vss 0.20404f
+C87 a_580772_926846# vss 0.381f
+C88 sg13cmos5l_or2_1$1_0.X vss 0.66392f
+C89 a_574934_925864# vss 1.96082f
+C90 a_579900_927220# vss 0.47489f
+C91 sg13cmos5l_inv_1$1_0.Y vss 0.50187f
+C92 sg13cmos5l_inv_1$1_1.Y vss 0.30498f
+C93 a_577144_925864# vss 2.25369f
+C94 a_574318_928566# vss 2.43941f
+.ends
+

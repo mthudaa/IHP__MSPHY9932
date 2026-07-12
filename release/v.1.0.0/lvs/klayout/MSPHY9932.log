@@ -1,0 +1,39 @@
+# Logfile created on 2026-07-11 19:02:32 +0200 by logger.rb/v1.5.3
+2026-07-11 19:02:32 +0200: Memory Usage (526416K) : Starting running SG13CMOS5L Klayout LVS runset on /foss/designs/adc8b/IHP__MSPHY9932/release/v.1.0.0/gds/MSPHY9932.gds
+2026-07-11 19:02:32 +0200: Memory Usage (526416K) : Ruby Version for klayout: 3.2.3
+2026-07-11 19:02:32 +0200: Memory Usage (532176K) : Loading database to memory is complete.
+2026-07-11 19:02:32 +0200: Memory Usage (532176K) : SG13CMOS5L Klayout LVS runset output at: /foss/designs/adc8b/IHP__MSPHY9932/release/v.1.0.0/lvs/klayout/MSPHY9932.lvsdb
+2026-07-11 19:02:32 +0200: Memory Usage (532176K) : Evaluate switches.
+2026-07-11 19:02:32 +0200: Memory Usage (532176K) : Extracted netlist with net names: true
+2026-07-11 19:02:32 +0200: Memory Usage (532176K) : Extracted netlist with comments in details: false
+2026-07-11 19:02:32 +0200: Memory Usage (532176K) : Selected NET_ONLY option: false
+2026-07-11 19:02:32 +0200: Memory Usage (532176K) : Selected LAYOUT_NETLIST option: (none)
+2026-07-11 19:02:32 +0200: Memory Usage (532176K) : Selected IGNORE_TOP_PORTS_MISMATCH option: 
+2026-07-11 19:02:32 +0200: Memory Usage (532176K) : Selected IMPLICIT_NETS option: (none)
+2026-07-11 19:02:32 +0200: Memory Usage (532176K) : Selected TOP_LVL_PINS option: false
+2026-07-11 19:02:32 +0200: Memory Usage (532176K) : Selected COMBINE DEVICES option: false
+2026-07-11 19:02:32 +0200: Memory Usage (532176K) : Selected PURGE option: false
+2026-07-11 19:02:32 +0200: Memory Usage (532176K) : Selected PURGE_NETS option: false
+2026-07-11 19:02:32 +0200: Memory Usage (532176K) : Selected SIMPLIFY option: true
+2026-07-11 19:02:32 +0200: Memory Usage (532176K) : Selected SERIES_RES option: true
+2026-07-11 19:02:32 +0200: Memory Usage (532176K) : Selected PARALLEL_RES option: true
+2026-07-11 19:02:32 +0200: Memory Usage (532176K) : flat  mode is enabled.
+2026-07-11 19:03:01 +0200: Memory Usage (526448K) : Starting running SG13CMOS5L Klayout LVS runset on /foss/designs/adc8b/IHP__MSPHY9932/release/v.1.0.0/gds/MSPHY9932.gds
+2026-07-11 19:03:01 +0200: Memory Usage (526448K) : Ruby Version for klayout: 3.2.3
+2026-07-11 19:03:01 +0200: Memory Usage (532080K) : Loading database to memory is complete.
+2026-07-11 19:03:01 +0200: Memory Usage (532080K) : SG13CMOS5L Klayout LVS runset output at: /foss/designs/adc8b/IHP__MSPHY9932/release/v.1.0.0/lvs/klayout/MSPHY9932.lvsdb
+2026-07-11 19:03:01 +0200: Memory Usage (532080K) : Evaluate switches.
+2026-07-11 19:03:01 +0200: Memory Usage (532080K) : Extracted netlist with net names: true
+2026-07-11 19:03:01 +0200: Memory Usage (532080K) : Extracted netlist with comments in details: false
+2026-07-11 19:03:01 +0200: Memory Usage (532080K) : Selected NET_ONLY option: false
+2026-07-11 19:03:01 +0200: Memory Usage (532080K) : Selected LAYOUT_NETLIST option: (none)
+2026-07-11 19:03:01 +0200: Memory Usage (532080K) : Selected IGNORE_TOP_PORTS_MISMATCH option: 
+2026-07-11 19:03:01 +0200: Memory Usage (532080K) : Selected IMPLICIT_NETS option: (none)
+2026-07-11 19:03:01 +0200: Memory Usage (532080K) : Selected TOP_LVL_PINS option: false
+2026-07-11 19:03:01 +0200: Memory Usage (532080K) : Selected COMBINE DEVICES option: false
+2026-07-11 19:03:01 +0200: Memory Usage (532080K) : Selected PURGE option: false
+2026-07-11 19:03:01 +0200: Memory Usage (532080K) : Selected PURGE_NETS option: false
+2026-07-11 19:03:01 +0200: Memory Usage (532080K) : Selected SIMPLIFY option: true
+2026-07-11 19:03:01 +0200: Memory Usage (532080K) : Selected SERIES_RES option: true
+2026-07-11 19:03:01 +0200: Memory Usage (532080K) : Selected PARALLEL_RES option: true
+2026-07-11 19:03:01 +0200: Memory Usage (532080K) : flat  mode is enabled.

@@ -1,0 +1,23 @@
+11-Jul-2026 19:07:29 | INFO    | Your Klayout version is: KLayout 0.30.9
+11-Jul-2026 19:07:29 | INFO    | Running SG13CMOS5L LVS checks on design /foss/designs/adc8b/IHP__MSPHY9932/release/v.1.0.0/gds/MSPHY9932.gds on cell side_cap8b
+11-Jul-2026 19:07:35 | ERROR   | KLayout run failed with exit code 1.
+11-Jul-2026 19:07:35 | ERROR   | KLayout stderr: ERROR: In /foss/pdks/ihp-sg13cmos5l/libs.tech/klayout/tech/lvs/sg13cmos5l.lvs: Can't find a schematic counterpart for the top cell side_cap8b - use 'same_circuit' to establish a correspondence
+11-Jul-2026 19:07:35 | ERROR   | KLayout stderr: ERROR: RuntimeError: Can't find a schematic counterpart for the top cell side_cap8b - use 'same_circuit' to establish a correspondence in Executable::execute
+11-Jul-2026 19:07:35 | INFO    | ==============================================================================
+11-Jul-2026 19:07:35 | INFO    | Important Summary
+11-Jul-2026 19:07:35 | INFO    | +------------------+--------------------------------------------------------------------------------+
+11-Jul-2026 19:07:35 | INFO    | | Status           | FAIL                                                                           |
+11-Jul-2026 19:07:35 | INFO    | | Mode             | COMPARE                                                                        |
+11-Jul-2026 19:07:35 | INFO    | | Outcome          | Comparison mode: completed (no match/mismatch verdict found).                  |
+11-Jul-2026 19:07:35 | INFO    | | Layout           | MSPHY9932.gds                                                                  |
+11-Jul-2026 19:07:35 | INFO    | | Top Cell         | side_cap8b                                                                     |
+11-Jul-2026 19:07:35 | INFO    | | Results Dir      | /foss/designs/adc8b/IHP__MSPHY9932/release/v.1.0.0/lvs/klayout_hier/side_cap8b |
+11-Jul-2026 19:07:35 | INFO    | | Warnings         | 0                                                                              |
+11-Jul-2026 19:07:35 | INFO    | | Errors           | 3                                                                              |
+11-Jul-2026 19:07:35 | INFO    | | Run Time (s)     | 5.922                                                                          |
+11-Jul-2026 19:07:35 | INFO    | +------------------+--------------------------------------------------------------------------------+
+11-Jul-2026 19:07:35 | ERROR   | Key errors:
+11-Jul-2026 19:07:35 | ERROR   |   - KLayout run failed with exit code 1.
+11-Jul-2026 19:07:35 | ERROR   |   - KLayout stderr: ERROR: In /foss/pdks/ihp-sg13cmos5l/libs.tech/klayout/tech/lvs/sg13cmos5l.lvs: Can't find a schematic counterpart for the top cell side_cap8b - use 'same_circuit' to establish a correspondence
+11-Jul-2026 19:07:35 | ERROR   |   - KLayout stderr: ERROR: RuntimeError: Can't find a schematic counterpart for the top cell side_cap8b - use 'same_circuit' to establish a correspondence in Executable::execute
+11-Jul-2026 19:07:35 | INFO    | ==============================================================================

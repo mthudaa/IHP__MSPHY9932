@@ -1,0 +1,23 @@
+11-Jul-2026 19:02:30 | INFO    | Your Klayout version is: KLayout 0.30.9
+11-Jul-2026 19:02:30 | INFO    | Running SG13CMOS5L LVS checks on design /foss/designs/adc8b/IHP__MSPHY9932/release/v.1.0.0/gds/MSPHY9932.gds on cell MSPHY9932
+11-Jul-2026 19:02:32 | ERROR   | KLayout run failed with exit code 1.
+11-Jul-2026 19:02:32 | ERROR   | KLayout stderr: ERROR: In /foss/pdks/ihp-sg13cmos5l/libs.tech/klayout/tech/lvs/sg13cmos5l.lvs: Unable to open file: /foss/designs/adc8b/IHP__MSPHY9932//MSPHY9932 (errno=2) in /tmp/MSPHY9932_klayout_ref.spice, line 4 in Netlist::read
+11-Jul-2026 19:02:32 | ERROR   | KLayout stderr: ERROR: RuntimeError: Unable to open file: /foss/designs/adc8b/IHP__MSPHY9932//MSPHY9932 (errno=2) in /tmp/MSPHY9932_klayout_ref.spice, line 4 in Netlist::read in Executable::execute
+11-Jul-2026 19:02:32 | INFO    | ==============================================================================
+11-Jul-2026 19:02:32 | INFO    | Important Summary
+11-Jul-2026 19:02:32 | INFO    | +------------------+----------------------------------------------------------------+
+11-Jul-2026 19:02:32 | INFO    | | Status           | FAIL                                                           |
+11-Jul-2026 19:02:32 | INFO    | | Mode             | COMPARE                                                        |
+11-Jul-2026 19:02:32 | INFO    | | Outcome          | Comparison mode: completed (no match/mismatch verdict found).  |
+11-Jul-2026 19:02:32 | INFO    | | Layout           | MSPHY9932.gds                                                  |
+11-Jul-2026 19:02:32 | INFO    | | Top Cell         | MSPHY9932                                                      |
+11-Jul-2026 19:02:32 | INFO    | | Results Dir      | /foss/designs/adc8b/IHP__MSPHY9932/release/v.1.0.0/lvs/klayout |
+11-Jul-2026 19:02:32 | INFO    | | Warnings         | 0                                                              |
+11-Jul-2026 19:02:32 | INFO    | | Errors           | 3                                                              |
+11-Jul-2026 19:02:32 | INFO    | | Run Time (s)     | 2.461                                                          |
+11-Jul-2026 19:02:32 | INFO    | +------------------+----------------------------------------------------------------+
+11-Jul-2026 19:02:32 | ERROR   | Key errors:
+11-Jul-2026 19:02:32 | ERROR   |   - KLayout run failed with exit code 1.
+11-Jul-2026 19:02:32 | ERROR   |   - KLayout stderr: ERROR: In /foss/pdks/ihp-sg13cmos5l/libs.tech/klayout/tech/lvs/sg13cmos5l.lvs: Unable to open file: /foss/designs/adc8b/IHP__MSPHY9932//MSPHY9932 (errno=2) in /tmp/MSPHY9932_klayout_ref.spice, line 4 in Netlist::read
+11-Jul-2026 19:02:32 | ERROR   |   - KLayout stderr: ERROR: RuntimeError: Unable to open file: /foss/designs/adc8b/IHP__MSPHY9932//MSPHY9932 (errno=2) in /tmp/MSPHY9932_klayout_ref.spice, line 4 in Netlist::read in Executable::execute
+11-Jul-2026 19:02:32 | INFO    | ==============================================================================

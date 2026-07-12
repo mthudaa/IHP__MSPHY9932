@@ -1,0 +1,30 @@
+* adc8b Hierarchical PEX-CC
+* All sub-blocks with coupling capacitance extraction
+* side_cap8b: 589 CC caps (MoM parasitics)
+* sar12b:    21,688 CC caps (digital)
+* cmp:       95 CC caps  
+* diff_bsw:  213 CC caps
+* Total:     22,585 CC caps
+
+.include side_cap8b_pex_cc.spice
+.include sar12b_pex_cc.spice
+.include cmp_pex_cc.spice
+.include diff_bsw_pex_cc.spice
+
+.subckt adc8b_hier_pex vdd vddr vss vip vin cks d0 d1 d2 cko frame
+
+* side_cap8b x2 (DAC arrays) - PEX port order: in_l[i] vc vdd vss in_h[i]
+x_sc0 pl0 pl1 pl2 pl3 pl4 pl5 pl6 pl7 pl8 pl9 pl10 vcp vddr vss ph10 ph9 ph8 ph7 ph6 ph5 ph4 ph3 ph2 ph1 ph0 side_cap8b_pex
+x_sc1 nl0 nl1 nl2 nl3 nl4 nl5 nl6 nl7 nl8 nl9 nl10 vcn vdd vss nh10 nh9 nh8 nh7 nh6 nh5 nh4 nh3 nh2 nh1 nh0 side_cap8b_pex
+
+* sar12b - PEX port order: VGND VPWR nh[i] nl[i] ph[i] pl[i] ckc cko cks comp_p d_out[0:2] frame rdy
+* Connect VGND->vss, VPWR->vdd
+x_sar vss vdd nh0 nh10 nh1 nh2 nh3 nh4 nh5 nh6 nh7 nh8 nh9 nl0 nl10 nl1 nl2 nl3 nl4 nl5 nl6 nl7 nl8 nl9 ph0 ph10 ph1 ph2 ph3 ph4 ph5 ph6 ph7 ph8 ph9 pl0 pl10 pl1 pl2 pl3 pl4 pl5 pl6 pl7 pl8 pl9 ckc cko cks comp_p d0 d1 d2 frame rdy sar12b_flat
+
+* diff_bsw
+x_dbs vip vin cks vdd vss vcp vcn diff_bsw_flat
+
+* cmp
+x_cmp vdd vss vcp vcn ckc rdy comp_p comp_n cmp_flat
+
+.ends

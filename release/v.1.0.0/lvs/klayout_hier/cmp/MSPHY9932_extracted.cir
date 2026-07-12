@@ -1,0 +1,100 @@
+* Extracted by KLayout with SG13CMOS5L LVS runset on : 11/07/2026 19:07
+
+.SUBCKT cmp
+M$1 \$8 clk VSS|vss VSS|vss sg13_lv_nmos L=0.13u W=0.5u AS=0.17p AD=0.095p
++ PS=1.68u PD=0.88u rfmode=0
+M$2 VSS|vss clk \$8 VSS|vss sg13_lv_nmos L=0.13u W=0.5u AS=0.095p AD=0.095p
++ PS=0.88u PD=0.88u rfmode=0
+M$3 \$8 clk VSS|vss VSS|vss sg13_lv_nmos L=0.13u W=0.5u AS=0.095p AD=0.095p
++ PS=0.88u PD=0.88u rfmode=0
+M$4 VSS|vss clk \$8 VSS|vss sg13_lv_nmos L=0.13u W=0.5u AS=0.095p AD=0.17p
++ PS=0.88u PD=1.68u rfmode=0
+M$5 \$11 vin \$8 VSS|vss sg13_lv_nmos L=0.13u W=5u AS=1.7p AD=0.95p PS=10.68u
++ PD=5.38u rfmode=0
+M$6 \$8 vin \$11 VSS|vss sg13_lv_nmos L=0.13u W=5u AS=0.95p AD=1.7p PS=5.38u
++ PD=10.68u rfmode=0
+M$7 \$11 A|outn A|outp VSS|vss sg13_lv_nmos L=0.13u W=5u AS=1.7p AD=0.95p
++ PS=10.68u PD=5.38u rfmode=0
+M$8 A|outp A|outn \$11 VSS|vss sg13_lv_nmos L=0.13u W=5u AS=0.95p AD=1.7p
++ PS=5.38u PD=10.68u rfmode=0
+M$9 \$13 A|outp A|outn VSS|vss sg13_lv_nmos L=0.13u W=5u AS=1.7p AD=0.95p
++ PS=10.68u PD=5.38u rfmode=0
+M$10 A|outn A|outp \$13 VSS|vss sg13_lv_nmos L=0.13u W=5u AS=0.95p AD=1.7p
++ PS=5.38u PD=10.68u rfmode=0
+M$11 \$13 vip \$8 VSS|vss sg13_lv_nmos L=0.13u W=5u AS=1.7p AD=0.95p PS=10.68u
++ PD=5.38u rfmode=0
+M$12 \$8 vip \$13 VSS|vss sg13_lv_nmos L=0.13u W=5u AS=0.95p AD=1.7p PS=5.38u
++ PD=10.68u rfmode=0
+M$13 \$25 A|X VSS|vss VSS|vss sg13_lv_nmos L=0.13u W=0.42u AS=0.1428p
++ AD=0.0798p PS=1.52u PD=0.8u rfmode=0
+M$14 VSS|vss \$25 \$26 VSS|vss sg13_lv_nmos L=0.5u W=0.42u AS=0.0798p
++ AD=0.1428p PS=0.8u PD=1.52u rfmode=0
+M$15 VSS|vss B|Y \$23 VSS|vss sg13_lv_nmos L=0.13u W=0.55u AS=0.187p AD=0.1045p
++ PS=1.78u PD=0.93u rfmode=0
+M$16 \$23 A|Y VSS|vss VSS|vss sg13_lv_nmos L=0.13u W=0.55u AS=0.1045p
++ AD=0.1469p PS=0.93u PD=1.155u rfmode=0
+M$17 VSS|vss \$23 A|X VSS|vss sg13_lv_nmos L=0.13u W=0.74u AS=0.1469p
++ AD=0.2516p PS=1.155u PD=2.16u rfmode=0
+M$18 VSS|vss VDD|vdd VSS|vss VSS|vss sg13_lv_nmos L=1u W=0.42u AS=0.1428p
++ AD=0.1428p PS=1.52u PD=1.52u rfmode=0
+M$19 VSS|vss VDD|vdd VSS|vss VSS|vss sg13_lv_nmos L=1u W=0.42u AS=0.1428p
++ AD=0.1428p PS=1.52u PD=1.52u rfmode=0
+M$20 VSS|vss A|outp A|Y VSS|vss sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p
++ AD=0.2516p PS=2.16u PD=2.16u rfmode=0
+M$21 VSS|vss A|outn B|Y VSS|vss sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p
++ AD=0.2516p PS=2.16u PD=2.16u rfmode=0
+M$22 VSS|vss \$26 \$28 VSS|vss sg13_lv_nmos L=0.5u W=0.42u AS=0.1426p
++ AD=0.1428p PS=1.16u PD=1.52u rfmode=0
+M$23 VSS|vss \$28 X|rdy VSS|vss sg13_lv_nmos L=0.13u W=0.74u AS=0.1426p
++ AD=0.2516p PS=1.16u PD=2.16u rfmode=0
+M$24 VDD|vdd A|X \$25 VDD|vdd sg13_lv_pmos L=0.13u W=0.42u AS=0.1523p
++ AD=0.1428p PS=1.38u PD=1.52u rfmode=0
+M$25 VDD|vdd \$25 \$26 VDD|vdd sg13_lv_pmos L=0.5u W=1u AS=0.1523p AD=0.34p
++ PS=1.38u PD=2.68u rfmode=0
+M$26 \$28 \$26 VDD|vdd VDD|vdd sg13_lv_pmos L=0.5u W=1u AS=0.34p AD=0.2254p
++ PS=2.68u PD=1.53u rfmode=0
+M$27 VDD|vdd \$28 X|rdy VDD|vdd sg13_lv_pmos L=0.13u W=1.12u AS=0.2254p
++ AD=0.4256p PS=1.53u PD=3u rfmode=0
+M$28 VDD|vdd VSS|vss VDD|vdd VDD|vdd sg13_lv_pmos L=1u W=1u AS=0.34p AD=0.34p
++ PS=2.68u PD=2.68u rfmode=0
+M$29 VDD|vdd VSS|vss VDD|vdd VDD|vdd sg13_lv_pmos L=1u W=1u AS=0.34p AD=0.34p
++ PS=2.68u PD=2.68u rfmode=0
+M$30 VDD|vdd A|outp A|Y VDD|vdd sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p
++ AD=0.3808p PS=2.92u PD=2.92u rfmode=0
+M$31 VDD|vdd A|outn B|Y VDD|vdd sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p
++ AD=0.3808p PS=2.92u PD=2.92u rfmode=0
+M$32 \$23 B|Y \$29 VDD|vdd sg13_lv_pmos L=0.13u W=0.84u AS=0.2856p AD=0.1596p
++ PS=2.36u PD=1.22u rfmode=0
+M$33 VDD|vdd A|Y \$29 VDD|vdd sg13_lv_pmos L=0.13u W=0.84u AS=0.2226p
++ AD=0.1596p PS=1.535u PD=1.22u rfmode=0
+M$34 VDD|vdd \$23 A|X VDD|vdd sg13_lv_pmos L=0.13u W=1.12u AS=0.2226p
++ AD=0.3976p PS=1.535u PD=2.95u rfmode=0
+M$35 \$11 clk VDD|vdd \$30 sg13_lv_pmos L=0.13u W=0.5u AS=0.17p AD=0.095p
++ PS=1.68u PD=0.88u rfmode=0
+M$36 VDD|vdd clk \$11 \$30 sg13_lv_pmos L=0.13u W=0.5u AS=0.095p AD=0.17p
++ PS=0.88u PD=1.68u rfmode=0
+M$37 A|outp clk VDD|vdd \$30 sg13_lv_pmos L=0.13u W=0.5u AS=0.17p AD=0.095p
++ PS=1.68u PD=0.88u rfmode=0
+M$38 VDD|vdd clk A|outp \$30 sg13_lv_pmos L=0.13u W=0.5u AS=0.095p AD=0.17p
++ PS=0.88u PD=1.68u rfmode=0
+M$39 A|outp A|outn VDD|vdd \$30 sg13_lv_pmos L=0.13u W=1.25u AS=0.425p
++ AD=0.2375p PS=3.18u PD=1.63u rfmode=0
+M$40 VDD|vdd A|outn A|outp \$30 sg13_lv_pmos L=0.13u W=1.25u AS=0.2375p
++ AD=0.425p PS=1.63u PD=3.18u rfmode=0
+M$41 A|outn A|outp VDD|vdd \$30 sg13_lv_pmos L=0.13u W=1.25u AS=0.425p
++ AD=0.2375p PS=3.18u PD=1.63u rfmode=0
+M$42 VDD|vdd A|outp A|outn \$30 sg13_lv_pmos L=0.13u W=1.25u AS=0.2375p
++ AD=0.425p PS=1.63u PD=3.18u rfmode=0
+M$43 A|outn clk VDD|vdd \$30 sg13_lv_pmos L=0.13u W=0.5u AS=0.17p AD=0.095p
++ PS=1.68u PD=0.88u rfmode=0
+M$44 VDD|vdd clk A|outn \$30 sg13_lv_pmos L=0.13u W=0.5u AS=0.095p AD=0.17p
++ PS=0.88u PD=1.68u rfmode=0
+M$45 \$13 clk VDD|vdd \$30 sg13_lv_pmos L=0.13u W=0.5u AS=0.17p AD=0.095p
++ PS=1.68u PD=0.88u rfmode=0
+M$46 VDD|vdd clk \$13 \$30 sg13_lv_pmos L=0.13u W=0.5u AS=0.095p AD=0.17p
++ PS=0.88u PD=1.68u rfmode=0
+R$47 VDD|vdd \$30 ntap1 A=6.816p P=44.84u
+R$48 VDD|vdd \$30 ntap1 A=7.491p P=49.34u
+R$49 VDD|vdd \$30 ntap1 A=6.816p P=44.84u
+R$50 VDD|vdd \$30 ntap1 A=11.96p P=48.84u
+.ENDS cmp
