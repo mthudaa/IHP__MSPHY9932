@@ -25,16 +25,16 @@ MSPHY9932
 | Pin | Domain | Type | Block |
 |---|---|---|---|
 | vip, vin | vddr | Analog In | adc8b |
-| cks | 3.3V | In | adc8b sample clock |
-| data[0:2] | 3.3V | Out | adc8b serial ADC data |
-| cko | 3.3V | Out | adc8b output clock |
-| frame | 3.3V | Out | adc8b frame sync |
-| i2s_bclk | 3.3V | In | top_i2s_asic bit clock |
-| i2s_lrck | 3.3V | In | top_i2s_asic word select |
-| i2s_sdata | 3.3V | In | top_i2s_asic serial data |
-| sd_out | 3.3V | Out | top_i2s_asic DAC output |
-| sd_clk | 3.3V | In | top_i2s_asic DAC clock |
-| rst_n | 3.3V | In | top_i2s_asic reset |
+| cks | 1.2V | In | adc8b sample clock |
+| data[0:2] | 1.2V | Out | adc8b serial ADC data |
+| cko | 1.2V | Out | adc8b output clock |
+| frame | 1.2V | Out | adc8b frame sync |
+| i2s_bclk | 1.2V | In | top_i2s_asic bit clock |
+| i2s_lrck | 1.2V | In | top_i2s_asic word select |
+| i2s_sdata | 1.2V | In | top_i2s_asic serial data |
+| sd_out | 1.2V | Out | top_i2s_asic DAC output |
+| sd_clk | 1.2V | In | top_i2s_asic DAC clock |
+| rst_n | 1.2V | In | top_i2s_asic reset |
 | vdd | 1.2V | Power | Digital core |
 | vddr | 1.2V | Power | Analog core |
 | vss | GND | Ground | Common |

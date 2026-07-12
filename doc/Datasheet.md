@@ -37,7 +37,7 @@
 | DAC Type | Sigma-delta with I2S input |
 | Analog Supply | 1.2V (vddr) |
 | Digital Supply | 1.2V (vdd) |
-| IO Supply | 3.3V (iovdd) |
+| IO Supply | 1.2V  |
 | ADC Power | ~226 µW (simulated at 10 MS/s) |
 | ADC Input | 0–1.2V differential |
 | ADC Output | Serial 3-bit (4 CKO cycles per sample) |
@@ -52,16 +52,16 @@
 | vss | Ground | — | Common ground |
 | vip | Input | vddr | Positive analog input (differential) |
 | vin | Input | vddr | Negative analog input (differential) |
-| cks | Input | 3.3V | Sample clock |
-| data[0:2] | Output | 3.3V | Serialized 3-bit ADC data |
-| cko | Output | 3.3V | Output data clock |
-| frame | Output | 3.3V | Frame sync (marks MSB group) |
-| i2s_bclk | Input | 3.3V | I2S bit clock |
-| i2s_lrck | Input | 3.3V | I2S word select (L/R clock) |
-| i2s_sdata | Input | 3.3V | I2S serial data in |
-| sd_out | Output | 3.3V | Sigma-delta DAC output |
-| sd_clk | Input | 3.3V | DAC clock |
-| rst_n | Input | 3.3V | Active-low reset |
+| cks | Input | 1.2V | Sample clock |
+| data[0:2] | Output | 1.2V | Serialized 3-bit ADC data |
+| cko | Output | 1.2V | Output data clock |
+| frame | Output | 1.2V | Frame sync (marks MSB group) |
+| i2s_bclk | Input | 1.2V | I2S bit clock |
+| i2s_lrck | Input | 1.2V | I2S word select (L/R clock) |
+| i2s_sdata | Input | 1.2V | I2S serial data in |
+| sd_out | Output | 1.2V | Sigma-delta DAC output |
+| sd_clk | Input | 1.2V | DAC clock |
+| rst_n | Input | 1.2V | Active-low reset |
 
 ## IO Pads
 

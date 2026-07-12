@@ -137,16 +137,16 @@ IHP__MSPHY9932/
 |---|---|---|---|
 | vip | Analog In | vddr | Positive analog input (0–1.2V differential) |
 | vin | Analog In | vddr | Negative analog input (0–1.2V differential) |
-| cks | Digital In | 3.3V IO | Sample clock |
-| cko | Digital Out | 3.3V IO | Output data clock (serialized ADC data) |
-| frame | Digital Out | 3.3V IO | Frame sync (marks MSB group) |
-| data[0:2] | Digital Out | 3.3V IO | Serialized 3-bit ADC output |
-| i2s_bclk | Digital In | 3.3V IO | I2S bit clock |
-| i2s_lrck | Digital In | 3.3V IO | I2S left-right clock (word select) |
-| i2s_sdata | Digital In | 3.3V IO | I2S serial data input |
-| sd_out | Digital Out | 3.3V IO | Sigma-delta DAC output |
-| sd_clk | Digital In | 3.3V IO | DAC clock |
-| rst_n | Digital In | 3.3V IO | Active-low reset |
+| cks | Digital In | 1.2V IO | Sample clock |
+| cko | Digital Out | 1.2V IO | Output data clock (serialized ADC data) |
+| frame | Digital Out | 1.2V IO | Frame sync (marks MSB group) |
+| data[0:2] | Digital Out | 1.2V IO | Serialized 3-bit ADC output |
+| i2s_bclk | Digital In | 1.2V IO | I2S bit clock |
+| i2s_lrck | Digital In | 1.2V IO | I2S left-right clock (word select) |
+| i2s_sdata | Digital In | 1.2V IO | I2S serial data input |
+| sd_out | Digital Out | 1.2V IO | Sigma-delta DAC output |
+| sd_clk | Digital In | 1.2V IO | DAC clock |
+| rst_n | Digital In | 1.2V IO | Active-low reset |
 | vdd | Power | 1.2V | Core digital supply |
 | vddr | Power | 1.2V | Analog supply |
 | vss | Ground | — | Common ground |
@@ -160,7 +160,7 @@ IHP__MSPHY9932/
 | ADC Resolution | 12-bit |
 | DAC Type | Sigma-delta with I2S input |
 | Conversion Rate | ~10 MS/s (simulated) |
-| Supply | 1.2V (core/analog), 3.3V (IO) |
+| Supply | 1.2V |
 | Power (ADC) | ~226 µW (simulated at 10 MS/s) |
 | Output Format | Serial 3-bit ADC + 1-bit SD DAC |
 
