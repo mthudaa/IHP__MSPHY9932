@@ -1,0 +1,11 @@
+15-Jul-2026 03:29:12 | INFO    | KLayout version detected: 0.30.9
+15-Jul-2026 03:29:12 | INFO    | Using DRC JSON file: /foss/pdks/ihp-sg13cmos5l/libs.tech/klayout/python/sg13cmos5l_pycell_lib/sg13cmos5l_tech_mod.json
+15-Jul-2026 03:29:12 | INFO    | Running IHP-SG13CMOS5L main checks on design /foss/designs/IHP__MSPHY9932/MSPHY9932-main/layout/klayout/MSPHY9932.gds, topcell: MSPHY9932
+15-Jul-2026 03:31:33 | INFO    | Running IHP-SG13CMOS5L sg13cmos5l_maximal checks on design /foss/designs/IHP__MSPHY9932/MSPHY9932-main/layout/klayout/MSPHY9932.gds, topcell: MSPHY9932
+15-Jul-2026 03:35:58 | INFO    | Completed running Sg13cmos5l_maximal checks.
+15-Jul-2026 03:35:58 | ERROR   | ==================================================================================
+15-Jul-2026 03:35:58 | ERROR   | KLayout DRC Check Failed: Violations were detected in the layout.
+15-Jul-2026 03:35:58 | ERROR   | ==================================================================================
+15-Jul-2026 03:35:58 | ERROR   | Violated rules are : {'Pad.fR_M3', 'Pad.fR_M4', 'Pad.fR_TM1', 'Pad.d1R', 'Pad.fR_M2'}
+
+15-Jul-2026 03:35:58 | INFO    | Total DRC Run time: 406.04 seconds (including execution, analysis, and reporting)

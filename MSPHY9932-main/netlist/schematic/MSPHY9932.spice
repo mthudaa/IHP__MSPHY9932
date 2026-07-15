@@ -1,36 +1,14 @@
 ** sch_path: /foss/designs/adc8b/sch/MSPHY9932.sch
-.subckt MSPHY9932 vdd vddr vss vip vin cks data[0] data[1] data[2] cko frame
-*.PININFO vdd:I vddr:I vss:I vip:I vin:I cks:I data[0:2]:O cko:O frame:O
+.subckt MSPHY9932 sd_out sd_clk rst_n i2s_bclk i2s_lrck i2s_sdata vdd vddr vss vip vin cks data[0] data[1] data[2] cko frame
+*.PININFO sd_clk:B rst_n:B i2s_bclk:B i2s_lrck:B i2s_sdata:B vdd:B vddr:B vss:B vip:B vin:B cks:B sd_out:B data[0:2]:B cko:B
+*+ frame:B
+x1 vss vdd i2s_bclk i2s_lrck i2s_sdata rst_n sd_clk sd_out top_i2s_asic
 x1 vdd vddr vss vip vin cks data[0] data[1] data[2] cko frame adc8b
-**** begin user architecture code
-
-
-.include /foss/pdks/ihp-sg13cmos5l/libs.ref/sg13cmos5l_io/spice/sg13cmos5l_io.spi
-.include /foss/pdks/ihp-sg13cmos5l/libs.ref/sg13cmos5l_stdcell/spice/sg13cmos5l_stdcell.spice
-xvddr vss vdd iovss iovdd vddr vddr_res sg13cmos5l_IOPadAnalog
-xvip vss vdd iovss iovdd vip vip_res sg13cmos5l_IOPadAnalog
-xvin vss vdd iovss iovdd vin vin_res sg13cmos5l_IOPadAnalog
-xcks vss vdd iovss iovdd cks cks_res sg13cmos5l_IOPadAnalog
-xvdd vss vdd iovss iovdd sg13cmos5l_IOPadVdd
-xvss vss vdd iovss iovdd sg13cmos5l_IOPadVss
-xd1 vss vdd iovss iovdd data[0] data_res[0] sg13cmos5l_IOPadAnalog
-xd2 vss vdd iovss iovdd data[1] data_res[1] sg13cmos5l_IOPadAnalog
-xd3 vss vdd iovss iovdd data[2] data_res[2] sg13cmos5l_IOPadAnalog
-xframe vss vdd iovss iovdd frame frame_res sg13cmos5l_IOPadAnalog
-xcko vss vdd iovss iovdd cko cko_res sg13cmos5l_IOPadAnalog
-xdum1 vss vdd iovss iovdd nets1 netres1 sg13cmos5l_IOPadAnalog
-xdum2 vss vdd iovss iovdd nets2 netres2 sg13cmos5l_IOPadAnalog
-xdum3 vss vdd iovss iovdd nets3 netres3 sg13cmos5l_IOPadAnalog
-xdum4 vss vdd iovss iovdd nets4 netres4 sg13cmos5l_IOPadAnalog
-xdum5 vss vdd iovss iovdd nets5 netres5 sg13cmos5l_IOPadAnalog
-xdum6 vss vdd iovss iovdd nets6 netres6 sg13cmos5l_IOPadAnalog
-xdum7 vss vdd iovss iovdd nets7 netres7 sg13cmos5l_IOPadAnalog
-xdum8 vss vdd iovss iovdd nets8 netres8 sg13cmos5l_IOPadAnalog
-xdum9 vss vdd iovss iovdd nets9 netres9 sg13cmos5l_IOPadAnalog
-
-
-**** end user architecture code
 .ends
+
+* expanding   symbol:  top_i2s_asic.sym # of pins=8
+** sym_path: /foss/designs/adc8b/sch/top_i2s_asic.sym
+.include top_i2s_asic.spice
 
 * expanding   symbol:  adc8b.sym # of pins=9
 ** sym_path: /foss/designs/adc8b/sch/adc8b.sym
@@ -47,34 +25,6 @@ x9 vss vdd ckc cko cks comp_p data[0] data[1] data[2] frame nh_sw[0] nh_sw[10] n
 + pl_sw[3] pl_sw[4] pl_sw[5] pl_sw[6] pl_sw[7] pl_sw[8] pl_sw[9] rdy sar12b
 x10 vip vin cks vdd vss vcp vcn diff_bsw
 x11 vdd vss vcp vcn ckc rdy comp_p comp_n cmp
-**** begin user architecture code
-
-
-.include /foss/pdks/ihp-sg13cmos5l/libs.ref/sg13cmos5l_io/spice/sg13cmos5l_io.spi
-.include /foss/pdks/ihp-sg13cmos5l/libs.ref/sg13cmos5l_stdcell/spice/sg13cmos5l_stdcell.spice
-xvddr vss vdd iovss iovdd vddr vddr_res sg13cmos5l_IOPadAnalog
-xvip vss vdd iovss iovdd vip vip_res sg13cmos5l_IOPadAnalog
-xvin vss vdd iovss iovdd vin vin_res sg13cmos5l_IOPadAnalog
-xcks vss vdd iovss iovdd cks cks_res sg13cmos5l_IOPadAnalog
-xvdd vss vdd iovss iovdd sg13cmos5l_IOPadVdd
-xvss vss vdd iovss iovdd sg13cmos5l_IOPadVss
-xd1 vss vdd iovss iovdd data[0] data_res[0] sg13cmos5l_IOPadAnalog
-xd2 vss vdd iovss iovdd data[1] data_res[1] sg13cmos5l_IOPadAnalog
-xd3 vss vdd iovss iovdd data[2] data_res[2] sg13cmos5l_IOPadAnalog
-xd4 vss vdd iovss iovdd frame frame_res sg13cmos5l_IOPadAnalog
-xcko vss vdd iovss iovdd cko cko_res sg13cmos5l_IOPadAnalog
-xdum1 vss vdd iovss iovdd net1 netres1 sg13cmos5l_IOPadAnalog
-xdum2 vss vdd iovss iovdd net2 netres2 sg13cmos5l_IOPadAnalog
-xdum3 vss vdd iovss iovdd net3 netres3 sg13cmos5l_IOPadAnalog
-xdum4 vss vdd iovss iovdd net4 netres4 sg13cmos5l_IOPadAnalog
-xdum5 vss vdd iovss iovdd net5 netres5 sg13cmos5l_IOPadAnalog
-xdum6 vss vdd iovss iovdd net6 netres6 sg13cmos5l_IOPadAnalog
-xdum7 vss vdd iovss iovdd net7 netres7 sg13cmos5l_IOPadAnalog
-xdum8 vss vdd iovss iovdd net8 netres8 sg13cmos5l_IOPadAnalog
-xdum9 vss vdd iovss iovdd net9 netres9 sg13cmos5l_IOPadAnalog
-
-
-**** end user architecture code
 .ends
 
 
@@ -107,12 +57,14 @@ x4[1] vdd vss in_h_sw[1] h_sw[1] buf_16
 x4[2] vdd vss in_h_sw[2] h_sw[2] buf_16
 x4 vdd vss in_l_sw[0] l_sw[0] buf_32
 x5 vdd vss in_h_sw[0] h_sw[0] buf_32
+x1 h_sw[0] h_sw[1] h_sw[2] h_sw[3] h_sw[4] h_sw[5] h_sw[6] h_sw[7] h_sw[8] h_sw[9] h_sw[10] l_sw[0] l_sw[1] l_sw[2] l_sw[3]
++ l_sw[4] l_sw[5] l_sw[6] l_sw[7] l_sw[8] l_sw[9] l_sw[10] vc vdd vss cap8b
 .ends
 
 
 * expanding   symbol:  sar12b.sym # of pins=13
 ** sym_path: /foss/designs/adc8b/sch/sar12b.sym
-.include /foss/designs/adc8b/sch/simulations/sar12b.spice
+.include sar12b.spice
 
 * expanding   symbol:  diff_bsw.sym # of pins=7
 ** sym_path: /foss/designs/adc8b/sch/diff_bsw.sym
@@ -174,8 +126,8 @@ MM4 z x vss vss sg13_lv_nmos w=500n l=0.13u ng=1 m=2
 ** sch_path: /foss/designs/adc8b/sch/buf_4.sch
 .subckt buf_4 vdd vss x z
 *.PININFO vdd:I vss:I x:I z:O
-MM2 z x vdd vdd rfpmos w=1u l=0.13u ng=1 m=4
-MM4 z x vss vss rfnmos w=500n l=0.13u ng=1 m=4
+MM2 z x vdd vdd sg13_lv_pmos w=1u l=0.13u ng=1 m=4
+MM4 z x vss vss sg13_lv_nmos w=500n l=0.13u ng=1 m=4
 .ends
 
 
@@ -206,6 +158,39 @@ MM4 z x vss vss sg13_lv_nmos w=500n l=0.13u ng=1 m=16
 *.PININFO vdd:I vss:I x:I z:O
 MM2 z x vdd vdd sg13_lv_pmos w=1u l=0.13u ng=1 m=32
 MM4 z x vss vss sg13_lv_nmos w=500n l=0.13u ng=1 m=32
+.ends
+
+
+* expanding   symbol:  cap8b.sym # of pins=5
+** sym_path: /foss/designs/adc8b/sch/cap8b.sym
+** sch_path: /foss/designs/adc8b/sch/cap8b.sch
+.subckt cap8b h_sw[0] h_sw[1] h_sw[2] h_sw[3] h_sw[4] h_sw[5] h_sw[6] h_sw[7] h_sw[8] h_sw[9] h_sw[10] l_sw[0] l_sw[1] l_sw[2]
++ l_sw[3] l_sw[4] l_sw[5] l_sw[6] l_sw[7] l_sw[8] l_sw[9] l_sw[10] vc vdd vss
+*.PININFO l_sw[0:10]:I vss:I vc:B h_sw[0:10]:I vdd:I
+C3 vc l_sw[4] 'c' m=64
+C4 vc h_sw[4] 'c' m=64
+C5 vc l_sw[5] 'c' m=32
+C6 vc h_sw[5] 'c' m=32
+C7 vc l_sw[6] 'c' m=16
+C8 vc h_sw[6] 'c' m=16
+C9 vc l_sw[7] 'c' m=8
+C10 vc h_sw[7] 'c' m=8
+C11 vc l_sw[8] 'c' m=4
+C12 vc h_sw[8] 'c' m=4
+C13 vc l_sw[9] 'c' m=2
+C14 vc h_sw[9] 'c' m=2
+C15 vc l_sw[10] 'c'
+C16 vc h_sw[10] 'c'
+C17 vc vdd 'c'
+C26 vc vss 'c'
+C1 vc l_sw[0] 'c' m=1024
+C2 vc h_sw[0] 'c' m=1024
+C18 vc l_sw[1] 'c' m=512
+C19 vc h_sw[1] 'c' m=512
+C20 vc l_sw[2] 'c' m=256
+C21 vc h_sw[2] 'c' m=256
+C22 vc l_sw[3] 'c' m=128
+C23 vc h_sw[3] 'c' m=128
 .ends
 
 

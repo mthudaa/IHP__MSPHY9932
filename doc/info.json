@@ -5,11 +5,11 @@
   "unique_id": "9932",
   "license": "Apache-2.0",
   "trl": 2,
-  "sealring_x": 0.0,
-  "sealring_y": 0.0,
-  "repository": "",
-  "pdk_version": "sg13cmos5l",
-  "process": "SG13G2",
+  "sealring_x": 1050.0,
+  "sealring_y": 1050.0,
+  "repository": "https://github.com/mthudaa/IHP__MSPHY9932.git",
+  "pdk_version": "9f614c48af6a97a47c541030e6a1e2f5e2819d79",
+  "process": "SG13CMOS5L",
   "dependencies": {},
   "tools": {},
   "top_cell_name": "MSPHY9932",
@@ -20,7 +20,7 @@
   "release": {
     "version": "v.1.0.0",
     "gds": "release/v.1.0.0/gds",
-    "netlist": "release/v.1.0.0/netlist",
+    "netlist": "release/v.1.0.0/netlist/MSPHY9932.spice",
     "doc": "release/v.1.0.0/doc"
   }
 }
